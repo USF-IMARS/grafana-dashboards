@@ -1,0 +1,578 @@
+{
+  "meta": {
+    "type": "db",
+    "canSave": false,
+    "canEdit": false,
+    "canStar": true,
+    "slug": "imars-objects",
+    "expires": "0001-01-01T00:00:00Z",
+    "created": "2018-12-21T17:12:53Z",
+    "updated": "2019-01-02T22:27:58Z",
+    "updatedBy": "admin",
+    "createdBy": "admin",
+    "version": 8
+  },
+  "dashboard": {
+    "annotations": {
+      "list": []
+    },
+    "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
+    "hideControls": false,
+    "id": 32,
+    "links": [],
+    "refresh": false,
+    "rows": [
+      {
+        "collapse": false,
+        "height": 564,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "decimals": null,
+            "fill": 4,
+            "id": 1,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": true,
+              "max": false,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": null,
+              "sortDesc": null,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 1,
+            "points": true,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 12,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "A",
+                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.*), 5, 0)",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "imars-object sizes",
+            "tooltip": {
+              "shared": false,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "deckbytes",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Dashboard Row",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": false,
+        "height": 250,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "decimals": null,
+            "fill": 4,
+            "id": 2,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": false,
+              "max": false,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": "total",
+              "sortDesc": true,
+              "total": true,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 1,
+            "points": true,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 12,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "A",
+                "target": "aliasByNode(perSecond($servers.exec.per_one_hour.imars_objects.size.*), 5, 0)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "imars-object sizes per second",
+            "tooltip": {
+              "shared": false,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "KBs",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Dashboard Row",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": false,
+        "height": 250,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "decimals": null,
+            "fill": 4,
+            "id": 3,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": true,
+              "max": false,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": null,
+              "sortDesc": null,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 1,
+            "points": true,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 12,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "A",
+                "target": "aliasByNode(sumSeriesWithWildcards($servers.exec.per_one_hour.imars_objects.size.*, 5), 0)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "imars-object sizes by server",
+            "tooltip": {
+              "shared": false,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "deckbytes",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Dashboard Row",
+        "titleSize": "h6"
+      }
+    ],
+    "schemaVersion": 14,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+      "list": [
+        {
+          "allValue": null,
+          "current": {
+            "selected": false,
+            "tags": [],
+            "text": "cozumel + reef01 + reef02 + seabreeze + thing1 + thing2 + thing3 + yin",
+            "value": [
+              "cozumel",
+              "reef01",
+              "reef02",
+              "seabreeze",
+              "thing1",
+              "thing2",
+              "thing3",
+              "yin"
+            ]
+          },
+          "datasource": "IMaRS graphite server",
+          "hide": 0,
+          "includeAll": true,
+          "label": null,
+          "multi": true,
+          "name": "servers",
+          "options": [
+            {
+              "selected": false,
+              "text": "All",
+              "value": "$__all"
+            },
+            {
+              "selected": false,
+              "text": "carbon",
+              "value": "carbon"
+            },
+            {
+              "selected": true,
+              "text": "cozumel",
+              "value": "cozumel"
+            },
+            {
+              "selected": false,
+              "text": "dune",
+              "value": "dune"
+            },
+            {
+              "selected": false,
+              "text": "grafana",
+              "value": "grafana"
+            },
+            {
+              "selected": false,
+              "text": "graphite",
+              "value": "graphite"
+            },
+            {
+              "selected": false,
+              "text": "harrisgeo-licensing",
+              "value": "harrisgeo-licensing"
+            },
+            {
+              "selected": false,
+              "text": "hydra",
+              "value": "hydra"
+            },
+            {
+              "selected": false,
+              "text": "hydra1",
+              "value": "hydra1"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow-test",
+              "value": "imars-airflow-test"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow01",
+              "value": "imars-airflow01"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow11",
+              "value": "imars-airflow11"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow12",
+              "value": "imars-airflow12"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow13",
+              "value": "imars-airflow13"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow14",
+              "value": "imars-airflow14"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow15",
+              "value": "imars-airflow15"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow16",
+              "value": "imars-airflow16"
+            },
+            {
+              "selected": false,
+              "text": "imars-ftp",
+              "value": "imars-ftp"
+            },
+            {
+              "selected": false,
+              "text": "imars-physalis",
+              "value": "imars-physalis"
+            },
+            {
+              "selected": false,
+              "text": "imars-sql-hydra",
+              "value": "imars-sql-hydra"
+            },
+            {
+              "selected": false,
+              "text": "imars-webserver-01",
+              "value": "imars-webserver-01"
+            },
+            {
+              "selected": false,
+              "text": "imars_bouys",
+              "value": "imars_bouys"
+            },
+            {
+              "selected": false,
+              "text": "imars_regions",
+              "value": "imars_regions"
+            },
+            {
+              "selected": false,
+              "text": "ipopp-master-2",
+              "value": "ipopp-master-2"
+            },
+            {
+              "selected": false,
+              "text": "ipopp02",
+              "value": "ipopp02"
+            },
+            {
+              "selected": false,
+              "text": "manglillo",
+              "value": "manglillo"
+            },
+            {
+              "selected": false,
+              "text": "mbon",
+              "value": "mbon"
+            },
+            {
+              "selected": false,
+              "text": "oceanobs-rcn",
+              "value": "oceanobs-rcn"
+            },
+            {
+              "selected": false,
+              "text": "puppet",
+              "value": "puppet"
+            },
+            {
+              "selected": true,
+              "text": "reef01",
+              "value": "reef01"
+            },
+            {
+              "selected": true,
+              "text": "reef02",
+              "value": "reef02"
+            },
+            {
+              "selected": true,
+              "text": "seabreeze",
+              "value": "seabreeze"
+            },
+            {
+              "selected": false,
+              "text": "seashell",
+              "value": "seashell"
+            },
+            {
+              "selected": false,
+              "text": "seastar",
+              "value": "seastar"
+            },
+            {
+              "selected": false,
+              "text": "siboney",
+              "value": "siboney"
+            },
+            {
+              "selected": true,
+              "text": "thing1",
+              "value": "thing1"
+            },
+            {
+              "selected": true,
+              "text": "thing2",
+              "value": "thing2"
+            },
+            {
+              "selected": true,
+              "text": "thing3",
+              "value": "thing3"
+            },
+            {
+              "selected": false,
+              "text": "tylardesk",
+              "value": "tylardesk"
+            },
+            {
+              "selected": false,
+              "text": "userproc",
+              "value": "userproc"
+            },
+            {
+              "selected": true,
+              "text": "yin",
+              "value": "yin"
+            }
+          ],
+          "query": "*",
+          "refresh": 0,
+          "regex": "",
+          "sort": 0,
+          "tagValuesQuery": "",
+          "tags": [],
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
+        }
+      ]
+    },
+    "time": {
+      "from": "now-7d",
+      "to": "now"
+    },
+    "timepicker": {
+      "refresh_intervals": [
+        "5s",
+        "10s",
+        "30s",
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h",
+        "2h",
+        "1d"
+      ],
+      "time_options": [
+        "5m",
+        "15m",
+        "1h",
+        "6h",
+        "12h",
+        "24h",
+        "2d",
+        "7d",
+        "30d"
+      ]
+    },
+    "timezone": "",
+    "title": "imars-objects",
+    "version": 8
+  }
+}

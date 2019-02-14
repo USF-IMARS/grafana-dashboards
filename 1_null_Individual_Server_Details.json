@@ -1,0 +1,2119 @@
+{
+  "meta": {
+    "type": "db",
+    "canSave": false,
+    "canEdit": false,
+    "canStar": true,
+    "slug": "individual-server-details",
+    "expires": "0001-01-01T00:00:00Z",
+    "created": "2017-09-29T18:25:07Z",
+    "updated": "2019-02-06T17:56:46Z",
+    "updatedBy": "admin",
+    "createdBy": "admin",
+    "version": 14
+  },
+  "dashboard": {
+    "annotations": {
+      "list": []
+    },
+    "description": "Collectd/Graphite Server metrics dashboard (Load,CPU, Memory, Temp etc)",
+    "editable": true,
+    "gnetId": 203,
+    "graphTooltip": 1,
+    "hideControls": false,
+    "id": 7,
+    "links": [],
+    "refresh": "10s",
+    "rows": [
+      {
+        "collapse": false,
+        "height": 80.4375,
+        "panels": [
+          {
+            "cacheTimeout": null,
+            "colorBackground": false,
+            "colorValue": false,
+            "colors": [
+              "rgba(245, 54, 54, 0.9)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(50, 172, 45, 0.97)"
+            ],
+            "datasource": "IMaRS graphite server",
+            "editable": true,
+            "error": false,
+            "format": "none",
+            "gauge": {
+              "maxValue": 100,
+              "minValue": 0,
+              "show": false,
+              "thresholdLabels": false,
+              "thresholdMarkers": true
+            },
+            "id": 1,
+            "interval": null,
+            "links": [],
+            "mappingType": 1,
+            "mappingTypes": [
+              {
+                "name": "value to text",
+                "value": 1
+              },
+              {
+                "name": "range to text",
+                "value": 2
+              }
+            ],
+            "maxDataPoints": 100,
+            "nullPointMode": "connected",
+            "nullText": null,
+            "postfix": "",
+            "postfixFontSize": "50%",
+            "prefix": "",
+            "prefixFontSize": "50%",
+            "rangeMaps": [
+              {
+                "from": "null",
+                "text": "N/A",
+                "to": "null"
+              }
+            ],
+            "span": 3,
+            "sparkline": {
+              "fillColor": "rgba(31, 118, 189, 0.18)",
+              "full": false,
+              "lineColor": "rgb(31, 120, 193)",
+              "show": true
+            },
+            "tableColumn": "",
+            "targets": [
+              {
+                "refId": "A",
+                "target": "collectd.$Server.entropy.entropy"
+              }
+            ],
+            "thresholds": "",
+            "title": "Available Entropy",
+            "type": "singlestat",
+            "valueFontSize": "80%",
+            "valueMaps": [
+              {
+                "op": "=",
+                "text": "N/A",
+                "value": "null"
+              }
+            ],
+            "valueName": "current"
+          },
+          {
+            "cacheTimeout": null,
+            "colorBackground": false,
+            "colorValue": true,
+            "colors": [
+              "rgba(50, 172, 45, 0.97)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "datasource": "IMaRS graphite server",
+            "editable": true,
+            "error": false,
+            "format": "none",
+            "gauge": {
+              "maxValue": 100,
+              "minValue": 0,
+              "show": false,
+              "thresholdLabels": false,
+              "thresholdMarkers": true
+            },
+            "id": 2,
+            "interval": null,
+            "links": [],
+            "mappingType": 1,
+            "mappingTypes": [
+              {
+                "name": "value to text",
+                "value": 1
+              },
+              {
+                "name": "range to text",
+                "value": 2
+              }
+            ],
+            "maxDataPoints": 100,
+            "nullPointMode": "connected",
+            "nullText": null,
+            "postfix": "",
+            "postfixFontSize": "50%",
+            "prefix": "",
+            "prefixFontSize": "50%",
+            "rangeMaps": [
+              {
+                "from": "null",
+                "text": "N/A",
+                "to": "null"
+              }
+            ],
+            "span": 3,
+            "sparkline": {
+              "fillColor": "rgba(31, 118, 189, 0.18)",
+              "full": false,
+              "lineColor": "rgb(31, 120, 193)",
+              "show": true
+            },
+            "tableColumn": "",
+            "targets": [
+              {
+                "refId": "A",
+                "target": "$Server.system.load15",
+                "textEditor": true
+              }
+            ],
+            "thresholds": "4,8",
+            "title": "15min Load",
+            "type": "singlestat",
+            "valueFontSize": "80%",
+            "valueMaps": [
+              {
+                "op": "=",
+                "text": "N/A",
+                "value": "null"
+              }
+            ],
+            "valueName": "current"
+          },
+          {
+            "cacheTimeout": null,
+            "colorBackground": false,
+            "colorValue": false,
+            "colors": [
+              "rgba(245, 54, 54, 0.9)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(50, 172, 45, 0.97)"
+            ],
+            "datasource": "IMaRS graphite server",
+            "decimals": 1,
+            "editable": true,
+            "error": false,
+            "format": "s",
+            "gauge": {
+              "maxValue": 100,
+              "minValue": 0,
+              "show": false,
+              "thresholdLabels": false,
+              "thresholdMarkers": true
+            },
+            "id": 3,
+            "interval": null,
+            "links": [],
+            "mappingType": 1,
+            "mappingTypes": [
+              {
+                "name": "value to text",
+                "value": 1
+              },
+              {
+                "name": "range to text",
+                "value": 2
+              }
+            ],
+            "maxDataPoints": 100,
+            "nullPointMode": "connected",
+            "nullText": null,
+            "postfix": "",
+            "postfixFontSize": "50%",
+            "prefix": "",
+            "prefixFontSize": "50%",
+            "rangeMaps": [
+              {
+                "from": "null",
+                "text": "N/A",
+                "to": "null"
+              }
+            ],
+            "span": 3,
+            "sparkline": {
+              "fillColor": "rgba(31, 118, 189, 0.18)",
+              "full": false,
+              "lineColor": "rgb(31, 120, 193)",
+              "show": true
+            },
+            "tableColumn": "",
+            "targets": [
+              {
+                "refId": "A",
+                "target": "$Server.system.uptime)",
+                "textEditor": true
+              }
+            ],
+            "thresholds": "",
+            "title": "Uptime",
+            "type": "singlestat",
+            "valueFontSize": "80%",
+            "valueMaps": [
+              {
+                "op": "=",
+                "text": "N/A",
+                "value": "null"
+              }
+            ],
+            "valueName": "current"
+          },
+          {
+            "cacheTimeout": null,
+            "colorBackground": false,
+            "colorValue": false,
+            "colors": [
+              "rgba(245, 54, 54, 0.9)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(50, 172, 45, 0.97)"
+            ],
+            "datasource": "IMaRS graphite server",
+            "decimals": 0,
+            "editable": true,
+            "error": false,
+            "format": "none",
+            "gauge": {
+              "maxValue": 100,
+              "minValue": 0,
+              "show": false,
+              "thresholdLabels": false,
+              "thresholdMarkers": true
+            },
+            "id": 14,
+            "interval": null,
+            "links": [],
+            "mappingType": 1,
+            "mappingTypes": [
+              {
+                "name": "value to text",
+                "value": 1
+              },
+              {
+                "name": "range to text",
+                "value": 2
+              }
+            ],
+            "maxDataPoints": 100,
+            "nullPointMode": "connected",
+            "nullText": null,
+            "postfix": "",
+            "postfixFontSize": "50%",
+            "prefix": "",
+            "prefixFontSize": "50%",
+            "rangeMaps": [
+              {
+                "from": "null",
+                "text": "N/A",
+                "to": "null"
+              }
+            ],
+            "span": 3,
+            "sparkline": {
+              "fillColor": "rgba(31, 118, 189, 0.18)",
+              "full": false,
+              "lineColor": "rgb(31, 120, 193)",
+              "show": true
+            },
+            "tableColumn": "",
+            "targets": [
+              {
+                "refId": "A",
+                "target": "$Server.system.n_users",
+                "textEditor": true
+              }
+            ],
+            "thresholds": "",
+            "title": "Users",
+            "type": "singlestat",
+            "valueFontSize": "80%",
+            "valueMaps": [
+              {
+                "op": "=",
+                "text": "N/A",
+                "value": "null"
+              }
+            ],
+            "valueName": "current"
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Row",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": false,
+        "height": 246,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "editable": true,
+            "error": false,
+            "fill": 9,
+            "grid": {},
+            "id": 26,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": true,
+              "max": true,
+              "min": true,
+              "show": false,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 0,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [
+              {
+                "alias": "/interrupt/",
+                "color": "#7EB26D"
+              },
+              {
+                "alias": "/nice/",
+                "color": "#EAB839"
+              },
+              {
+                "alias": "/softirq/",
+                "color": "#65C5DB"
+              },
+              {
+                "alias": "/steal/",
+                "color": "#E0752D"
+              },
+              {
+                "alias": "/system/",
+                "color": "#BF1B00"
+              },
+              {
+                "alias": "/user/",
+                "color": "#0A437C"
+              },
+              {
+                "alias": "/wait/",
+                "color": "#BA43A9"
+              },
+              {
+                "alias": "/idle/",
+                "color": "#DEDAF7",
+                "fill": 2,
+                "stack": false
+              },
+              {
+                "alias": "/cpu/",
+                "yaxis": 2
+              }
+            ],
+            "spaceLength": 10,
+            "span": 2,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "O",
+                "target": "aliasByNode(absolute(offset($Server.cpu-total.cpu.usage_idle,-100)),2)",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "CPU Usage",
+            "tooltip": {
+              "msResolution": false,
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "percent",
+                "label": "Percent",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": "Jiffies",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": false
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "decimals": 0,
+            "editable": true,
+            "error": false,
+            "fill": 0,
+            "grid": {},
+            "id": 25,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": false,
+              "max": false,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sideWidth": null,
+              "sort": null,
+              "sortDesc": null,
+              "total": false,
+              "values": false
+            },
+            "lines": true,
+            "linewidth": 2,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 2,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": false,
+                "refId": "A",
+                "target": "aliasByNode(sortByMaxima(asPercent(perSecond(exclude($Server.*.diskio.io_time, '$Server.*[0-9].*')), 1000)), 1)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Disk utilization",
+            "tooltip": {
+              "msResolution": false,
+              "shared": true,
+              "sort": 2,
+              "value_type": "cumulative"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "percent",
+                "label": "",
+                "logBase": 1,
+                "max": "100",
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "editable": true,
+            "error": false,
+            "fill": 9,
+            "grid": {},
+            "id": 23,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": true,
+              "max": true,
+              "min": true,
+              "show": false,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 0,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [
+              {
+                "alias": "/interrupt/",
+                "color": "#7EB26D"
+              },
+              {
+                "alias": "/nice/",
+                "color": "#EAB839"
+              },
+              {
+                "alias": "/softirq/",
+                "color": "#65C5DB"
+              },
+              {
+                "alias": "/steal/",
+                "color": "#E0752D"
+              },
+              {
+                "alias": "/system/",
+                "color": "#BF1B00"
+              },
+              {
+                "alias": "/user/",
+                "color": "#0A437C"
+              },
+              {
+                "alias": "/wait/",
+                "color": "#BA43A9"
+              },
+              {
+                "alias": "/idle/",
+                "color": "#DEDAF7",
+                "fill": 2,
+                "stack": false
+              },
+              {
+                "alias": "/cpu/",
+                "yaxis": 2
+              }
+            ],
+            "spaceLength": 10,
+            "span": 2,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "O",
+                "target": "$Server.mem.used_percent",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "RAM usage",
+            "tooltip": {
+              "msResolution": false,
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "percent",
+                "label": "Percent",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": "Jiffies",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": false
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "editable": true,
+            "error": false,
+            "fill": 9,
+            "grid": {},
+            "id": 24,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": true,
+              "max": true,
+              "min": true,
+              "show": false,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 0,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [
+              {
+                "alias": "/interrupt/",
+                "color": "#7EB26D"
+              },
+              {
+                "alias": "/nice/",
+                "color": "#EAB839"
+              },
+              {
+                "alias": "/softirq/",
+                "color": "#65C5DB"
+              },
+              {
+                "alias": "/steal/",
+                "color": "#E0752D"
+              },
+              {
+                "alias": "/system/",
+                "color": "#BF1B00"
+              },
+              {
+                "alias": "/user/",
+                "color": "#0A437C"
+              },
+              {
+                "alias": "/wait/",
+                "color": "#BA43A9"
+              },
+              {
+                "alias": "/idle/",
+                "color": "#DEDAF7",
+                "fill": 2,
+                "stack": false
+              },
+              {
+                "alias": "/cpu/",
+                "yaxis": 2
+              }
+            ],
+            "spaceLength": 10,
+            "span": 2,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "O",
+                "target": "$Server.swap.used_percent",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "swap usage",
+            "tooltip": {
+              "msResolution": false,
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "percent",
+                "label": "Percent",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": "Jiffies",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": false
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "editable": true,
+            "error": false,
+            "fill": 1,
+            "grid": {},
+            "id": 22,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": false,
+              "max": false,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": "max",
+              "sortDesc": true,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [
+              {
+                "alias": "RX",
+                "transform": "negative-Y"
+              }
+            ],
+            "spaceLength": 10,
+            "span": 4,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": false,
+                "refId": "A",
+                "target": "aliasByNode(perSecond(scale($Server.{em*,eth*,enp*,ens*}.net.*, 8)), 1, 3)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Network Usages",
+            "tooltip": {
+              "msResolution": true,
+              "shared": true,
+              "sort": 0,
+              "value_type": "cumulative"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "bps",
+                "logBase": 10,
+                "max": null,
+                "min": "1000",
+                "show": true
+              },
+              {
+                "format": "short",
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": true,
+        "title": "Resource Usage Overview",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": false,
+        "height": 309,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "decimals": 2,
+            "editable": true,
+            "error": false,
+            "fill": 0,
+            "grid": {},
+            "id": 15,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": true,
+              "max": false,
+              "min": true,
+              "rightSide": false,
+              "show": true,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 2,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": false,
+                "refId": "A",
+                "target": "$Server.*.*.*.disk.used_percent",
+                "textEditor": false
+              },
+              {
+                "hide": false,
+                "refId": "B",
+                "target": "$Server.*.*.*.*.*.used_percent",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "% disk used",
+            "tooltip": {
+              "msResolution": false,
+              "shared": true,
+              "sort": 0,
+              "value_type": "cumulative"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "percent",
+                "label": "",
+                "logBase": 1,
+                "max": "100",
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "decimals": 0,
+            "editable": true,
+            "error": false,
+            "fill": 0,
+            "grid": {},
+            "id": 16,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": true,
+              "max": false,
+              "min": true,
+              "rightSide": false,
+              "show": true,
+              "sort": "min",
+              "sortDesc": false,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 2,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": false,
+                "refId": "A",
+                "target": "$Server.*.*.*.disk.free",
+                "textEditor": false
+              },
+              {
+                "hide": false,
+                "refId": "B",
+                "target": "$Server.*.*.*.*.*.free",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "free space",
+            "tooltip": {
+              "msResolution": false,
+              "shared": true,
+              "sort": 0,
+              "value_type": "cumulative"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "bytes",
+                "label": "",
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "short",
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": true,
+        "title": "Disk Space",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": true,
+        "height": "300px",
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "editable": true,
+            "error": false,
+            "fill": 9,
+            "grid": {},
+            "id": 10,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": true,
+              "max": true,
+              "min": true,
+              "show": false,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 0,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [
+              {
+                "alias": "/interrupt/",
+                "color": "#7EB26D"
+              },
+              {
+                "alias": "/nice/",
+                "color": "#EAB839"
+              },
+              {
+                "alias": "/softirq/",
+                "color": "#65C5DB"
+              },
+              {
+                "alias": "/steal/",
+                "color": "#E0752D"
+              },
+              {
+                "alias": "/system/",
+                "color": "#BF1B00"
+              },
+              {
+                "alias": "/user/",
+                "color": "#0A437C"
+              },
+              {
+                "alias": "/wait/",
+                "color": "#BA43A9"
+              },
+              {
+                "alias": "/idle/",
+                "color": "#DEDAF7",
+                "fill": 2,
+                "stack": false
+              },
+              {
+                "alias": "/cpu/",
+                "yaxis": 2
+              }
+            ],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "O",
+                "target": "aliasByNode(absolute(offset($Server.cpu-total.cpu.usage_idle,-100)),2)",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "CPU Usage",
+            "tooltip": {
+              "msResolution": false,
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "percent",
+                "label": "Percent",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": "Jiffies",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": false
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "editable": true,
+            "error": false,
+            "fill": 0,
+            "grid": {},
+            "id": 4,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": true,
+              "max": true,
+              "min": true,
+              "rightSide": false,
+              "show": true,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 2,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": false,
+                "refId": "G",
+                "target": "$Server.processes.total_threads",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Threadcount",
+            "tooltip": {
+              "msResolution": false,
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "short",
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "short",
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": true,
+        "title": "CPU / Processes",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": true,
+        "height": 250,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "decimals": 0,
+            "editable": true,
+            "error": false,
+            "fill": 0,
+            "grid": {},
+            "id": 5,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": false,
+              "max": true,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sideWidth": null,
+              "sort": null,
+              "sortDesc": null,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 2,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 4,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": false,
+                "refId": "A",
+                "target": "aliasByNode(sortByMaxima(asPercent(perSecond(exclude($Server.*.diskio.io_time, '$Server.*[0-9].*')), 1000)), 1)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Disk utilization",
+            "tooltip": {
+              "msResolution": false,
+              "shared": true,
+              "sort": 2,
+              "value_type": "cumulative"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "percent",
+                "label": "",
+                "logBase": 1,
+                "max": "100",
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "decimals": 0,
+            "editable": true,
+            "error": false,
+            "fill": 1,
+            "grid": {},
+            "id": 6,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": false,
+              "max": true,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [
+              {
+                "alias": "/write/",
+                "transform": "negative-Y"
+              },
+              {
+                "alias": "/ops/",
+                "yaxis": 2
+              }
+            ],
+            "spaceLength": 10,
+            "span": 4,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "A",
+                "target": "aliasByNode(sortByMaxima(perSecond(exclude($Server.*.diskio.iops_in_progress, '$Server.*[0-9].*'))), 1)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "I/O requests in progress",
+            "tooltip": {
+              "msResolution": true,
+              "shared": true,
+              "sort": 2,
+              "value_type": "cumulative"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "iops",
+                "label": "",
+                "logBase": 10,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "iops",
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "decimals": 0,
+            "editable": true,
+            "error": false,
+            "fill": 1,
+            "grid": {},
+            "id": 21,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": false,
+              "max": true,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": "max",
+              "sortDesc": true,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [
+              {
+                "alias": "/write/",
+                "transform": "negative-Y"
+              },
+              {
+                "alias": "/ops/",
+                "yaxis": 2
+              }
+            ],
+            "spaceLength": 10,
+            "span": 4,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "A",
+                "target": "aliasByNode(sortByMaxima(perSecond(exclude($Server.*.diskio.read_bytes, '$Server.*[0-9].*'))), 1, 3)",
+                "textEditor": false
+              },
+              {
+                "refId": "B",
+                "target": "aliasByNode(sortByMaxima(perSecond(exclude($Server.*.diskio.write_bytes, '$Server.*[0-9].*'))), 1, 3)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Disk i/o speeds",
+            "tooltip": {
+              "msResolution": true,
+              "shared": true,
+              "sort": 2,
+              "value_type": "cumulative"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "Bps",
+                "label": "",
+                "logBase": 10,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "iops",
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": true,
+        "title": "Disk I/O",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": true,
+        "height": "300px",
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "editable": true,
+            "error": false,
+            "fill": 9,
+            "grid": {},
+            "id": 17,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": true,
+              "max": true,
+              "min": true,
+              "show": false,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 0,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [
+              {
+                "alias": "/interrupt/",
+                "color": "#7EB26D"
+              },
+              {
+                "alias": "/nice/",
+                "color": "#EAB839"
+              },
+              {
+                "alias": "/softirq/",
+                "color": "#65C5DB"
+              },
+              {
+                "alias": "/steal/",
+                "color": "#E0752D"
+              },
+              {
+                "alias": "/system/",
+                "color": "#BF1B00"
+              },
+              {
+                "alias": "/user/",
+                "color": "#0A437C"
+              },
+              {
+                "alias": "/wait/",
+                "color": "#BA43A9"
+              },
+              {
+                "alias": "/idle/",
+                "color": "#DEDAF7",
+                "fill": 2,
+                "stack": false
+              },
+              {
+                "alias": "/cpu/",
+                "yaxis": 2
+              }
+            ],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "O",
+                "target": "$Server.mem.used_percent",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "RAM usage",
+            "tooltip": {
+              "msResolution": false,
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "percent",
+                "label": "Percent",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": "Jiffies",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": false
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "editable": true,
+            "error": false,
+            "fill": 9,
+            "grid": {},
+            "id": 18,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": true,
+              "max": true,
+              "min": true,
+              "show": false,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 0,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [
+              {
+                "alias": "/interrupt/",
+                "color": "#7EB26D"
+              },
+              {
+                "alias": "/nice/",
+                "color": "#EAB839"
+              },
+              {
+                "alias": "/softirq/",
+                "color": "#65C5DB"
+              },
+              {
+                "alias": "/steal/",
+                "color": "#E0752D"
+              },
+              {
+                "alias": "/system/",
+                "color": "#BF1B00"
+              },
+              {
+                "alias": "/user/",
+                "color": "#0A437C"
+              },
+              {
+                "alias": "/wait/",
+                "color": "#BA43A9"
+              },
+              {
+                "alias": "/idle/",
+                "color": "#DEDAF7",
+                "fill": 2,
+                "stack": false
+              },
+              {
+                "alias": "/cpu/",
+                "yaxis": 2
+              }
+            ],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "O",
+                "target": "$Server.swap.used_percent",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "swap usage",
+            "tooltip": {
+              "msResolution": false,
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "percent",
+                "label": "Percent",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": "Jiffies",
+                "logBase": 1,
+                "max": 101,
+                "min": 0,
+                "show": false
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": true,
+        "title": "Memory",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": true,
+        "height": "300px",
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "IMaRS graphite server",
+            "editable": true,
+            "error": false,
+            "fill": 1,
+            "grid": {},
+            "id": 9,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": true,
+              "max": true,
+              "min": true,
+              "rightSide": false,
+              "show": true,
+              "sort": "max",
+              "sortDesc": true,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [
+              {
+                "alias": "RX",
+                "transform": "negative-Y"
+              }
+            ],
+            "spaceLength": 10,
+            "span": 12,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "A",
+                "target": "perSecond(scale($Server.{em*,eth*,enp*,ens*}.net.*, 8))",
+                "textEditor": false
+              },
+              {
+                "refId": "B",
+                "target": "perSecond(scale($Server.{em*,eth*,enp*,ens*}.net.*, 8))",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Network Usages",
+            "tooltip": {
+              "msResolution": true,
+              "shared": true,
+              "sort": 0,
+              "value_type": "cumulative"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "bps",
+                "logBase": 10,
+                "max": null,
+                "min": "1000",
+                "show": true
+              },
+              {
+                "format": "short",
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "fill": 1,
+            "id": 19,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": false,
+              "max": true,
+              "min": false,
+              "show": true,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "null",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "A",
+                "target": "$Server.puppet_marine_usf_edu.ping.average_response_ms",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "puppet ping response time",
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "ms",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "fill": 1,
+            "id": 20,
+            "legend": {
+              "avg": false,
+              "current": false,
+              "max": false,
+              "min": false,
+              "show": true,
+              "total": false,
+              "values": false
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "null",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "A",
+                "target": "$Server.puppet_marine_usf_edu.ping.percent_packet_loss",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "puppet ping packet losses",
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": true,
+        "title": "Network",
+        "titleSize": "h6"
+      }
+    ],
+    "schemaVersion": 14,
+    "style": "dark",
+    "tags": [
+      "sysadmin"
+    ],
+    "templating": {
+      "list": [
+        {
+          "allFormat": "glob",
+          "allValue": null,
+          "current": {
+            "tags": [],
+            "text": "seashell",
+            "value": "seashell"
+          },
+          "datasource": "IMaRS graphite server",
+          "hide": 0,
+          "hideLabel": false,
+          "includeAll": false,
+          "label": null,
+          "multi": false,
+          "multiFormat": "glob",
+          "name": "Server",
+          "options": [],
+          "query": "*",
+          "refresh": 1,
+          "regex": "",
+          "sort": 0,
+          "tagValuesQuery": "",
+          "tags": [],
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
+        }
+      ]
+    },
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "timepicker": {
+      "collapse": false,
+      "enable": true,
+      "notice": false,
+      "now": true,
+      "nowDelay": "",
+      "refresh_intervals": [
+        "5s",
+        "10s",
+        "30s",
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h",
+        "2h",
+        "1d"
+      ],
+      "status": "Stable",
+      "time_options": [
+        "5m",
+        "15m",
+        "1h",
+        "6h",
+        "12h",
+        "24h",
+        "2d",
+        "7d",
+        "30d",
+        "90d"
+      ],
+      "type": "timepicker"
+    },
+    "timezone": "browser",
+    "title": "Individual Server Details",
+    "version": 14
+  }
+}
