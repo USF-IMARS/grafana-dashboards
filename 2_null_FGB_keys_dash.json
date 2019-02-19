@@ -7,10 +7,10 @@
     "slug": "fgb_keys_dash",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2019-02-14T16:52:36Z",
-    "updated": "2019-02-14T18:18:36Z",
+    "updated": "2019-02-18T18:28:47Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 3
+    "version": 7
   },
   "dashboard": {
     "annotations": {
@@ -128,7 +128,7 @@
         "titleSize": "h6"
       },
       {
-        "collapse": true,
+        "collapse": false,
         "height": 93,
         "panels": [
           {
@@ -136,7 +136,7 @@
             "bg_color": "0xffccccff",
             "color_bar_str": "Rainbow|||-1.0|1.0|",
             "colorbar_display": "individual",
-            "delta": 864000000,
+            "delta": 3111600000,
             "delta_unit": "ms",
             "description": "MODIS-Aqua 1km chlor_a product (mg/m^3) binned to 7-day intervals.\nAnomaly images created by subtracting 7-day climatologies made using data from 2003-2017.",
             "id": 34,
@@ -166,34 +166,34 @@
             "url": "http://imars-physalis.marine.usf.edu:8080/erddap",
             "urls": [
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2018-03-05T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=40960%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2018-03-05T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "5th Mar 2018"
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2016-01-04T17:22:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=256000%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2016-01-04T17:22:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "4th Jan 2016"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2018-03-15T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=40960%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2018-03-15T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "15th Mar 2018"
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2016-02-09T17:42:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=256000%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2016-02-09T17:42:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "9th Feb 2016"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2018-03-25T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=40960%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2018-03-25T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "25th Mar 2018"
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2016-03-16T18:02:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=256000%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2016-03-16T18:02:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "16th Mar 2016"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2018-04-04T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=40960%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2018-04-04T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "4th Apr 2018"
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2016-04-21T18:22:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=256000%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2016-04-21T18:22:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "21st Apr 2016"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2018-04-14T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=40960%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2018-04-14T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "14th Apr 2018"
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2016-05-27T18:42:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=256000%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2016-05-27T18:42:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "27th May 2016"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2018-04-24T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=40960%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2018-04-24T16:01:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "24th Apr 2018"
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?chlor_a_anom[(2016-07-02T19:02:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=256000%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?chlor_a_anom[(2016-07-02T19:02:00Z)][(26):(23.5)][(-84):(-79.5)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "2nd Jul 2016"
               }
             ],
             "variable_id": "chlor_a_anom"
@@ -1352,7 +1352,7 @@
         "height": 175,
         "panels": [
           {
-            "content": "* Satellite data is from the Moderate Resolution Imaging Spectroradiometer (MODIS-Aqua) sensor and is obtained from the [Ocean Biology Processing Group](https://oceancolor.gsfc.nasa.gov/) at NASA's Goddard Space Flight Center.\n\n* Algal Bloom Index (ABI) is calculated using the method of Hu and Feng (2016; doi: 10.1117/1.JRS.11.012003) \n\n* River discharge data is obtained from the [USGS National Water Information System](https://waterdata.usgs.gov/nwis). Discharge values from the Shark, Harney, Broad, Lostman's and Chatham Rivers (green circles on map above) are summed for discharge into Florida Bay shown on plot above.\n\n* Buoy at Peterson Key is operated by the National Park Service and data is obtained from the [National Data Buoy Center.](https://www.ndbc.noaa.gov/) \n\nPlease feel free to contact us with questions or to sign up for email alerts:\n\nDr. Daniel Otis - [dotis@mail.usf.edu](mailto:dotis@mail.usf.edu)\n\n",
+            "content": "* Satellite data is from the Moderate Resolution Imaging Spectroradiometer (MODIS-Aqua) sensor and is obtained from the [Ocean Biology Processing Group](https://oceancolor.gsfc.nasa.gov/) at NASA's Goddard Space Flight Center.\n\n* Algal Bloom Index (ABI) is calculated using the method of Hu and Feng (2016; doi: 10.1117/1.JRS.11.012003) \n\n* River discharge data is obtained from the [USGS National Water Information System](https://waterdata.usgs.gov/nwis). Discharge values from the Colorado, Brazos, Trinity, Neches and Sabine Rivers (green circles on map above) are summed for discharge into the northwest Gulf of Mexico and plotted above. Discharge data from the Mississippi River (yellow circle on map above) is also plotted.\n\nPlease feel free to contact us with questions or to sign up for email alerts:\n\nDr. Daniel Otis - [dotis@mail.usf.edu](mailto:dotis@mail.usf.edu)\n\n",
             "id": 55,
             "links": [],
             "mode": "markdown",
@@ -1373,7 +1373,7 @@
         "height": 223,
         "panels": [
           {
-            "content": "![logo image](http://imars-webserver-01.marine.usf.edu/modis_aqua_fk/FKdb_logos_horz.png)",
+            "content": "![logo image](http://imars-webserver-01.marine.usf.edu/modis_aqua_fgbnms/FGBdb_logo_panel.png)",
             "id": 54,
             "links": [],
             "mode": "markdown",
@@ -1538,6 +1538,6 @@
     },
     "timezone": "",
     "title": "FGB_keys_dash",
-    "version": 3
+    "version": 7
   }
 }
