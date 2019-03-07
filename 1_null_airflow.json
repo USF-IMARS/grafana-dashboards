@@ -7,10 +7,10 @@
     "slug": "airflow",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2017-12-06T17:45:12Z",
-    "updated": "2019-01-22T16:05:20Z",
+    "updated": "2019-03-06T16:30:21Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 42
+    "version": 43
   },
   "dashboard": {
     "annotations": {
@@ -314,14 +314,14 @@
               {
                 "hide": false,
                 "refId": "B",
-                "target": "aliasByNode(sortByMinima(movingAverage(perSecond($worker_servers.exec.per_ten_min.airflow.database.jobs.running), 3)), 0)",
+                "target": "aliasByNode(sortByMinima(movingAverage(perSecond($worker_servers.exec.per_ten_min.airflow.database.jobs.failed), 3)), 0)",
                 "textEditor": false
               }
             ],
             "thresholds": [],
             "timeFrom": null,
             "timeShift": null,
-            "title": "jobs \"running\" / s (MA 3)",
+            "title": "jobs \"failed\" / s (MA 3)",
             "tooltip": {
               "shared": true,
               "sort": 0,
@@ -393,14 +393,14 @@
               {
                 "hide": false,
                 "refId": "B",
-                "target": "aliasByNode(sortByMinima($worker_servers.exec.per_ten_min.airflow.database.jobs.success), 0)",
+                "target": "aliasByNode(sortByMinima(sumSeriesWithWildcards($worker_servers.exec.per_ten_min.airflow.database.jobs.*, 0)), 5)",
                 "textEditor": false
               }
             ],
             "thresholds": [],
             "timeFrom": null,
             "timeShift": null,
-            "title": "jobs \"success\"",
+            "title": "jobs status",
             "tooltip": {
               "shared": true,
               "sort": 0,
@@ -418,7 +418,7 @@
               {
                 "format": "short",
                 "label": null,
-                "logBase": 1,
+                "logBase": 10,
                 "max": null,
                 "min": "0",
                 "show": true
@@ -843,7 +843,7 @@
         "titleSize": "h6"
       },
       {
-        "collapse": true,
+        "collapse": false,
         "height": 151,
         "panels": [
           {
@@ -895,8 +895,8 @@
             "scopedVars": {
               "dag_id": {
                 "selected": true,
-                "text": "processing_modis_aqua_pass_gom",
-                "value": "processing_modis_aqua_pass_gom"
+                "text": "file_watcher",
+                "value": "file_watcher"
               }
             },
             "span": 1,
@@ -968,8 +968,8 @@
             "scopedVars": {
               "dag_id": {
                 "selected": true,
-                "text": "processing_modis_aqua_pass_gom",
-                "value": "processing_modis_aqua_pass_gom"
+                "text": "file_watcher",
+                "value": "file_watcher"
               }
             },
             "seriesOverrides": [],
@@ -1050,8 +1050,8 @@
             "scopedVars": {
               "dag_id": {
                 "selected": true,
-                "text": "processing_modis_aqua_pass_gom",
-                "value": "processing_modis_aqua_pass_gom"
+                "text": "file_watcher",
+                "value": "file_watcher"
               }
             },
             "seriesOverrides": [],
@@ -1135,8 +1135,8 @@
             "scopedVars": {
               "dag_id": {
                 "selected": true,
-                "text": "processing_modis_aqua_pass_gom",
-                "value": "processing_modis_aqua_pass_gom"
+                "text": "file_watcher",
+                "value": "file_watcher"
               }
             },
             "seriesOverrides": [],
@@ -1192,432 +1192,6 @@
         "repeat": "dag_id",
         "repeatIteration": null,
         "repeatRowId": null,
-        "showTitle": true,
-        "title": "$dag_id",
-        "titleSize": "h6"
-      },
-      {
-        "collapse": true,
-        "height": 151,
-        "panels": [
-          {
-            "cacheTimeout": null,
-            "colorBackground": true,
-            "colorValue": false,
-            "colors": [
-              "rgba(29, 29, 29, 0.9)",
-              "rgba(161, 216, 150, 0.89)",
-              "rgba(50, 172, 45, 0.97)"
-            ],
-            "datasource": null,
-            "format": "none",
-            "gauge": {
-              "maxValue": 100,
-              "minValue": 0,
-              "show": false,
-              "thresholdLabels": false,
-              "thresholdMarkers": true
-            },
-            "id": 52,
-            "interval": null,
-            "links": [],
-            "mappingType": 1,
-            "mappingTypes": [
-              {
-                "name": "value to text",
-                "value": 1
-              },
-              {
-                "name": "range to text",
-                "value": 2
-              }
-            ],
-            "maxDataPoints": 100,
-            "nullPointMode": "connected",
-            "nullText": null,
-            "postfix": "",
-            "postfixFontSize": "50%",
-            "prefix": "",
-            "prefixFontSize": "50%",
-            "rangeMaps": [
-              {
-                "from": "null",
-                "text": "N/A",
-                "to": "null"
-              }
-            ],
-            "scopedVars": {
-              "dag_id": {
-                "selected": true,
-                "text": "processing_wv2_classification_big_bend",
-                "value": "processing_wv2_classification_big_bend"
-              }
-            },
-            "span": 1,
-            "sparkline": {
-              "fillColor": "rgba(31, 118, 189, 0.18)",
-              "full": true,
-              "lineColor": "rgb(31, 120, 193)",
-              "show": true
-            },
-            "tableColumn": "",
-            "targets": [
-              {
-                "refId": "A",
-                "target": "$airflow_master_servers.exec.per_ten_min.airflow.database.dag_id.$dag_id.running"
-              }
-            ],
-            "thresholds": "1,10",
-            "title": "# running",
-            "type": "singlestat",
-            "valueFontSize": "80%",
-            "valueMaps": [
-              {
-                "op": "=",
-                "text": "N/A",
-                "value": "null"
-              }
-            ],
-            "valueName": "current"
-          },
-          {
-            "aliasColors": {},
-            "bars": true,
-            "dashLength": 10,
-            "dashes": false,
-            "datasource": null,
-            "fill": 1,
-            "id": 53,
-            "legend": {
-              "alignAsTable": true,
-              "avg": true,
-              "current": false,
-              "max": false,
-              "min": false,
-              "rightSide": true,
-              "show": true,
-              "total": false,
-              "values": true
-            },
-            "lines": false,
-            "linewidth": 1,
-            "links": [],
-            "minSpan": 6,
-            "nullPointMode": "null",
-            "percentage": false,
-            "pointradius": 1,
-            "points": false,
-            "renderer": "flot",
-            "repeat": null,
-            "scopedVars": {
-              "dag_id": {
-                "selected": true,
-                "text": "processing_wv2_classification_big_bend",
-                "value": "processing_wv2_classification_big_bend"
-              }
-            },
-            "seriesOverrides": [],
-            "spaceLength": 10,
-            "span": 5,
-            "stack": true,
-            "steppedLine": false,
-            "targets": [
-              {
-                "hide": false,
-                "refId": "B",
-                "target": "aliasByNode(perSecond($airflow_master_servers.exec.per_ten_min.airflow.database.dag_id.$dag_id.{success,failed}), 7)",
-                "textEditor": false
-              }
-            ],
-            "thresholds": [],
-            "timeFrom": null,
-            "timeShift": null,
-            "title": "{fail or success} / s",
-            "tooltip": {
-              "shared": true,
-              "sort": 0,
-              "value_type": "individual"
-            },
-            "type": "graph",
-            "xaxis": {
-              "buckets": null,
-              "mode": "time",
-              "name": null,
-              "show": true,
-              "values": []
-            },
-            "yaxes": [
-              {
-                "format": "short",
-                "label": "",
-                "logBase": 1,
-                "max": null,
-                "min": "0",
-                "show": true
-              },
-              {
-                "format": "short",
-                "label": null,
-                "logBase": 1,
-                "max": null,
-                "min": null,
-                "show": true
-              }
-            ]
-          },
-          {
-            "aliasColors": {},
-            "bars": true,
-            "dashLength": 10,
-            "dashes": false,
-            "datasource": null,
-            "fill": 1,
-            "id": 54,
-            "legend": {
-              "avg": false,
-              "current": false,
-              "max": false,
-              "min": false,
-              "show": false,
-              "total": false,
-              "values": false
-            },
-            "lines": false,
-            "linewidth": 1,
-            "links": [],
-            "nullPointMode": "null",
-            "percentage": false,
-            "pointradius": 5,
-            "points": false,
-            "renderer": "flot",
-            "repeat": null,
-            "scopedVars": {
-              "dag_id": {
-                "selected": true,
-                "text": "processing_wv2_classification_big_bend",
-                "value": "processing_wv2_classification_big_bend"
-              }
-            },
-            "seriesOverrides": [],
-            "spaceLength": 10,
-            "span": 4,
-            "stack": true,
-            "steppedLine": false,
-            "targets": [
-              {
-                "refId": "A",
-                "target": "aliasByMetric($airflow_master_servers.exec.per_ten_min.airflow.database.dag_id.$dag_id.{failed,success})"
-              }
-            ],
-            "thresholds": [],
-            "timeFrom": null,
-            "timeShift": null,
-            "title": "total fails & successes",
-            "tooltip": {
-              "shared": true,
-              "sort": 0,
-              "value_type": "individual"
-            },
-            "type": "graph",
-            "xaxis": {
-              "buckets": null,
-              "mode": "time",
-              "name": null,
-              "show": true,
-              "values": [
-                "current"
-              ]
-            },
-            "yaxes": [
-              {
-                "format": "short",
-                "label": "",
-                "logBase": 1,
-                "max": null,
-                "min": "0",
-                "show": true
-              },
-              {
-                "format": "short",
-                "label": null,
-                "logBase": 1,
-                "max": null,
-                "min": null,
-                "show": true
-              }
-            ]
-          },
-          {
-            "aliasColors": {},
-            "bars": true,
-            "dashLength": 10,
-            "dashes": false,
-            "datasource": null,
-            "fill": 1,
-            "id": 55,
-            "legend": {
-              "alignAsTable": false,
-              "avg": false,
-              "current": false,
-              "hideEmpty": false,
-              "hideZero": false,
-              "max": true,
-              "min": false,
-              "rightSide": false,
-              "show": false,
-              "total": false,
-              "values": true
-            },
-            "lines": false,
-            "linewidth": 1,
-            "links": [],
-            "nullPointMode": "null",
-            "percentage": false,
-            "pointradius": 5,
-            "points": false,
-            "renderer": "flot",
-            "scopedVars": {
-              "dag_id": {
-                "selected": true,
-                "text": "processing_wv2_classification_big_bend",
-                "value": "processing_wv2_classification_big_bend"
-              }
-            },
-            "seriesOverrides": [],
-            "spaceLength": 10,
-            "span": 2,
-            "stack": false,
-            "steppedLine": false,
-            "targets": [
-              {
-                "refId": "A",
-                "target": "aliasByMetric(perSecond($airflow_master_servers.exec.per_ten_min.airflow.database.dag_id.$dag_id.{failed,success}))"
-              }
-            ],
-            "thresholds": [],
-            "timeFrom": null,
-            "timeShift": null,
-            "title": "fail/success rate (avg per second)",
-            "tooltip": {
-              "shared": false,
-              "sort": 0,
-              "value_type": "individual"
-            },
-            "type": "graph",
-            "xaxis": {
-              "buckets": null,
-              "mode": "series",
-              "name": null,
-              "show": true,
-              "values": [
-                "avg"
-              ]
-            },
-            "yaxes": [
-              {
-                "format": "short",
-                "label": "",
-                "logBase": 1,
-                "max": null,
-                "min": "0",
-                "show": true
-              },
-              {
-                "format": "short",
-                "label": null,
-                "logBase": 1,
-                "max": null,
-                "min": null,
-                "show": true
-              }
-            ]
-          },
-          {
-            "aliasColors": {},
-            "bars": false,
-            "dashLength": 10,
-            "dashes": false,
-            "datasource": null,
-            "fill": 1,
-            "id": 56,
-            "legend": {
-              "alignAsTable": true,
-              "avg": false,
-              "current": false,
-              "max": false,
-              "min": false,
-              "rightSide": true,
-              "show": true,
-              "total": false,
-              "values": false
-            },
-            "lines": true,
-            "linewidth": 1,
-            "links": [],
-            "nullPointMode": "null",
-            "percentage": false,
-            "pointradius": 5,
-            "points": false,
-            "renderer": "flot",
-            "repeat": null,
-            "scopedVars": {
-              "dag_id": {
-                "selected": true,
-                "text": "processing_wv2_classification_big_bend",
-                "value": "processing_wv2_classification_big_bend"
-              }
-            },
-            "seriesOverrides": [],
-            "spaceLength": 10,
-            "span": 12,
-            "stack": false,
-            "steppedLine": false,
-            "targets": [
-              {
-                "refId": "A",
-                "target": "aliasByNode($worker_servers.exec.per_ten_min.airflow.database.task_instances.$dag_id.*.*, 0, 7, 8)"
-              }
-            ],
-            "thresholds": [],
-            "timeFrom": null,
-            "timeShift": null,
-            "title": "[[dag_id]] task instances per node",
-            "tooltip": {
-              "shared": true,
-              "sort": 0,
-              "value_type": "individual"
-            },
-            "type": "graph",
-            "xaxis": {
-              "buckets": null,
-              "mode": "time",
-              "name": null,
-              "show": true,
-              "values": []
-            },
-            "yaxes": [
-              {
-                "format": "short",
-                "label": null,
-                "logBase": 1,
-                "max": null,
-                "min": null,
-                "show": true
-              },
-              {
-                "format": "short",
-                "label": null,
-                "logBase": 1,
-                "max": null,
-                "min": null,
-                "show": true
-              }
-            ]
-          }
-        ],
-        "repeat": null,
-        "repeatIteration": 1548099553907,
-        "repeatRowId": 4,
         "showTitle": true,
         "title": "$dag_id",
         "titleSize": "h6"
@@ -1886,10 +1460,9 @@
         {
           "allValue": null,
           "current": {
-            "text": "processing_modis_aqua_pass_gom + processing_wv2_classification_big_bend",
+            "text": "file_watcher",
             "value": [
-              "processing_modis_aqua_pass_gom",
-              "processing_wv2_classification_big_bend"
+              "file_watcher"
             ]
           },
           "datasource": "IMaRS graphite server",
@@ -1935,8 +1508,10 @@
         {
           "allValue": null,
           "current": {
-            "text": "imars-airflow11 + imars-airflow12 + imars-airflow13 + imars-airflow14 + imars-airflow15 + imars-airflow16",
+            "tags": [],
+            "text": "imars-airflow-21 + imars-airflow11 + imars-airflow12 + imars-airflow13 + imars-airflow14 + imars-airflow15 + imars-airflow16",
             "value": [
+              "imars-airflow-21",
               "imars-airflow11",
               "imars-airflow12",
               "imars-airflow13",
@@ -1965,7 +1540,7 @@
       ]
     },
     "time": {
-      "from": "now-7d",
+      "from": "now-2d",
       "to": "now"
     },
     "timepicker": {
@@ -1995,6 +1570,6 @@
     },
     "timezone": "",
     "title": "airflow",
-    "version": 42
+    "version": 43
   }
 }
