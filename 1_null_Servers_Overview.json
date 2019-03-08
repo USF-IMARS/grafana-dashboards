@@ -7,10 +7,10 @@
     "slug": "servers-overview",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2017-09-29T18:24:22Z",
-    "updated": "2018-12-21T17:32:07Z",
+    "updated": "2019-03-07T21:36:40Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 41
+    "version": 42
   },
   "dashboard": {
     "annotations": {
@@ -581,10 +581,21 @@
             "steppedLine": false,
             "targets": [
               {
-                "hide": false,
+                "hide": true,
                 "refId": "A",
-                "target": "aliasByNode(sortByMaxima($Server.*.*.*.disk.free), 0, 1)",
+                "target": "aliasByNode($Server.*.*.*.disk.free, 0, 1)",
                 "textEditor": false
+              },
+              {
+                "hide": true,
+                "refId": "B",
+                "target": "aliasByNode($Server.*.*.*.*.disk.free, 0, 1)",
+                "textEditor": false
+              },
+              {
+                "refId": "C",
+                "target": "sortByMaxima(group(#A, #B))",
+                "targetFull": "sortByMaxima(group(aliasByNode($Server.*.*.*.disk.free, 0, 1), aliasByNode($Server.*.*.*.*.disk.free, 0, 1)))"
               }
             ],
             "thresholds": [],
@@ -2227,6 +2238,6 @@
     },
     "timezone": "browser",
     "title": "Servers Overview",
-    "version": 41
+    "version": 42
   }
 }
