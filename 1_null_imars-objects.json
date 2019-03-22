@@ -7,10 +7,10 @@
     "slug": "imars-objects",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2018-12-21T17:12:53Z",
-    "updated": "2019-01-02T22:27:58Z",
+    "updated": "2019-03-21T15:41:51Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 8
+    "version": 9
   },
   "dashboard": {
     "annotations": {
@@ -60,13 +60,103 @@
             "renderer": "flot",
             "seriesOverrides": [],
             "spaceLength": 10,
-            "span": 12,
+            "span": 6,
             "stack": true,
             "steppedLine": false,
             "targets": [
               {
+                "hide": true,
                 "refId": "A",
                 "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.*), 5, 0)",
+                "textEditor": true
+              },
+              {
+                "refId": "B",
+                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode($servers.exec.per_one_hour.imars_objects.sizes.*.*, 5), 5))",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "imars-object sizes",
+            "tooltip": {
+              "shared": false,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "deckbytes",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "decimals": null,
+            "fill": 4,
+            "id": 6,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": true,
+              "max": false,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": null,
+              "sortDesc": null,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 1,
+            "points": true,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": true,
+                "refId": "A",
+                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.*), 5, 0)",
+                "textEditor": true
+              },
+              {
+                "refId": "B",
+                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode(perSecond($servers.exec.per_one_hour.imars_objects.sizes.*.*), 5), 5))",
                 "textEditor": true
               }
             ],
@@ -110,8 +200,8 @@
         "repeat": null,
         "repeatIteration": null,
         "repeatRowId": null,
-        "showTitle": false,
-        "title": "Dashboard Row",
+        "showTitle": true,
+        "title": "by area",
         "titleSize": "h6"
       },
       {
@@ -126,18 +216,18 @@
             "datasource": null,
             "decimals": null,
             "fill": 4,
-            "id": 2,
+            "id": 5,
             "legend": {
               "alignAsTable": true,
               "avg": false,
-              "current": false,
+              "current": true,
               "max": false,
               "min": false,
               "rightSide": true,
               "show": true,
-              "sort": "total",
-              "sortDesc": true,
-              "total": true,
+              "sort": null,
+              "sortDesc": null,
+              "total": false,
               "values": true
             },
             "lines": true,
@@ -150,20 +240,26 @@
             "renderer": "flot",
             "seriesOverrides": [],
             "spaceLength": 10,
-            "span": 12,
-            "stack": false,
+            "span": 6,
+            "stack": true,
             "steppedLine": false,
             "targets": [
               {
+                "hide": true,
                 "refId": "A",
-                "target": "aliasByNode(perSecond($servers.exec.per_one_hour.imars_objects.size.*), 5, 0)",
-                "textEditor": false
+                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.*), 5, 0)",
+                "textEditor": true
+              },
+              {
+                "refId": "B",
+                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode($servers.exec.per_one_hour.imars_objects.sizes.*.*, 6), 6))",
+                "textEditor": true
               }
             ],
             "thresholds": [],
             "timeFrom": null,
             "timeShift": null,
-            "title": "imars-object sizes per second",
+            "title": "imars-object sizes",
             "tooltip": {
               "shared": false,
               "sort": 0,
@@ -179,7 +275,91 @@
             },
             "yaxes": [
               {
-                "format": "KBs",
+                "format": "deckbytes",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "decimals": null,
+            "fill": 4,
+            "id": 4,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": true,
+              "max": false,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": null,
+              "sortDesc": null,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 1,
+            "points": true,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": true,
+                "refId": "A",
+                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.*), 5, 0)",
+                "textEditor": true
+              },
+              {
+                "refId": "B",
+                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode(perSecond($servers.exec.per_one_hour.imars_objects.sizes.*.*), 6),1))",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "d/dt imars-object sizes",
+            "tooltip": {
+              "shared": false,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "deckbytes",
                 "label": null,
                 "logBase": 1,
                 "max": null,
@@ -200,8 +380,8 @@
         "repeat": null,
         "repeatIteration": null,
         "repeatRowId": null,
-        "showTitle": false,
-        "title": "Dashboard Row",
+        "showTitle": true,
+        "title": "by product",
         "titleSize": "h6"
       },
       {
@@ -245,9 +425,15 @@
             "steppedLine": false,
             "targets": [
               {
+                "hide": true,
                 "refId": "A",
                 "target": "aliasByNode(sumSeriesWithWildcards($servers.exec.per_one_hour.imars_objects.size.*, 5), 0)",
                 "textEditor": false
+              },
+              {
+                "refId": "B",
+                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode($servers.exec.per_one_hour.imars_objects.sizes.*.*, 0,6), 1))",
+                "textEditor": true
               }
             ],
             "thresholds": [],
@@ -290,8 +476,8 @@
         "repeat": null,
         "repeatIteration": null,
         "repeatRowId": null,
-        "showTitle": false,
-        "title": "Dashboard Row",
+        "showTitle": true,
+        "title": "by server",
         "titleSize": "h6"
       }
     ],
@@ -543,7 +729,7 @@
       ]
     },
     "time": {
-      "from": "now-7d",
+      "from": "now-1h",
       "to": "now"
     },
     "timepicker": {
@@ -573,6 +759,6 @@
     },
     "timezone": "",
     "title": "imars-objects",
-    "version": 8
+    "version": 9
   }
 }
