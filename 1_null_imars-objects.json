@@ -7,10 +7,10 @@
     "slug": "imars-objects",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2018-12-21T17:12:53Z",
-    "updated": "2019-03-21T15:41:51Z",
+    "updated": "2019-03-25T17:51:13Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 9
+    "version": 10
   },
   "dashboard": {
     "annotations": {
@@ -179,7 +179,7 @@
             },
             "yaxes": [
               {
-                "format": "deckbytes",
+                "format": "KBs",
                 "label": null,
                 "logBase": 1,
                 "max": null,
@@ -359,7 +359,7 @@
             },
             "yaxes": [
               {
-                "format": "deckbytes",
+                "format": "KBs",
                 "label": null,
                 "logBase": 1,
                 "max": null,
@@ -729,7 +729,7 @@
       ]
     },
     "time": {
-      "from": "now-1h",
+      "from": "now-2d",
       "to": "now"
     },
     "timepicker": {
@@ -759,6 +759,6 @@
     },
     "timezone": "",
     "title": "imars-objects",
-    "version": 9
+    "version": 10
   }
 }
