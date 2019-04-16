@@ -7,10 +7,10 @@
     "slug": "servers-overview",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2017-09-29T18:24:22Z",
-    "updated": "2019-03-07T21:36:40Z",
+    "updated": "2019-04-15T13:15:53Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 42
+    "version": 43
   },
   "dashboard": {
     "annotations": {
@@ -412,11 +412,11 @@
                   "type": "query"
                 }
               ],
-              "executionErrorState": "alerting",
-              "frequency": "1h",
+              "executionErrorState": "keep_state",
+              "frequency": "3h",
               "handler": 1,
               "name": "% disk full alert",
-              "noDataState": "no_data",
+              "noDataState": "keep_state",
               "notifications": [
                 {
                   "id": 1
@@ -2238,6 +2238,6 @@
     },
     "timezone": "browser",
     "title": "Servers Overview",
-    "version": 42
+    "version": 43
   }
 }
