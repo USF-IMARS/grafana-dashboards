@@ -7,10 +7,10 @@
     "slug": "mysql",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2018-05-07T21:16:37Z",
-    "updated": "2018-05-07T23:03:40Z",
+    "updated": "2019-04-19T18:57:47Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 4
+    "version": 5
   },
   "dashboard": {
     "annotations": {
@@ -67,7 +67,7 @@
             "targets": [
               {
                 "refId": "A",
-                "target": "aliasByMetric(imars-sql-hydra.127_0_0_1:3306.mysql.{a*,*})"
+                "target": "aliasByMetric($server.127_0_0_1:3306.mysql.{a*,*})"
               }
             ],
             "thresholds": [],
@@ -158,7 +158,7 @@
             "targets": [
               {
                 "refId": "A",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.{a*,*}))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.{a*,*}))"
               }
             ],
             "thresholds": [],
@@ -246,7 +246,8 @@
             "targets": [
               {
                 "refId": "A",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.com_*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.com_*))",
+                "textEditor": false
               }
             ],
             "thresholds": [],
@@ -322,7 +323,8 @@
             "targets": [
               {
                 "refId": "A",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.handler_*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.handler_*))",
+                "textEditor": false
               }
             ],
             "thresholds": [],
@@ -408,7 +410,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.bytes_*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.bytes_*))"
               }
             ],
             "thresholds": [],
@@ -482,7 +484,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.*connect*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.*connect*))"
               }
             ],
             "thresholds": [],
@@ -568,7 +570,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.*_locks_*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.*_locks_*))"
               }
             ],
             "thresholds": [],
@@ -642,7 +644,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.created_tmp_*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.created_tmp_*))"
               }
             ],
             "thresholds": [],
@@ -716,7 +718,7 @@
             "targets": [
               {
                 "refId": "A",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.qcache_*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.qcache_*))"
               }
             ],
             "thresholds": [],
@@ -802,7 +804,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.select_*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.select_*))"
               }
             ],
             "thresholds": [],
@@ -876,7 +878,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.slow_queries))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.slow_queries))"
               }
             ],
             "thresholds": [],
@@ -962,7 +964,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(imars-sql-hydra.127_0_0_1:3306.mysql.threads_*)"
+                "target": "aliasByMetric($server.127_0_0_1:3306.mysql.threads_*)"
               }
             ],
             "thresholds": [],
@@ -1048,7 +1050,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.open*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.open*))"
               }
             ],
             "thresholds": [],
@@ -1122,7 +1124,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.sort_*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.sort_*))"
               }
             ],
             "thresholds": [],
@@ -1208,7 +1210,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.*_errors))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.*_errors))"
               }
             ],
             "thresholds": [],
@@ -1294,7 +1296,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.innodb_rows_*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.innodb_rows_*))"
               }
             ],
             "thresholds": [],
@@ -1368,7 +1370,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.innodb_data_*))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.innodb_data_*))"
               }
             ],
             "thresholds": [],
@@ -1452,7 +1454,7 @@
             "targets": [
               {
                 "refId": "A",
-                "target": "aliasByMetric(perSecond(imars-sql-hydra.127_0_0_1:3306.mysql.{com_insert,com_delete,com_select,com_update}))"
+                "target": "aliasByMetric(perSecond($server.127_0_0_1:3306.mysql.{com_insert,com_delete,com_select,com_update}))"
               }
             ],
             "thresholds": [],
@@ -1506,10 +1508,261 @@
     "style": "dark",
     "tags": [],
     "templating": {
-      "list": []
+      "list": [
+        {
+          "allValue": null,
+          "current": {
+            "tags": [],
+            "text": "imars-sql-hydra",
+            "value": "imars-sql-hydra"
+          },
+          "datasource": "IMaRS graphite server",
+          "hide": 0,
+          "includeAll": false,
+          "label": null,
+          "multi": false,
+          "name": "server",
+          "options": [
+            {
+              "selected": false,
+              "text": "40",
+              "value": "40"
+            },
+            {
+              "selected": false,
+              "text": "carbon",
+              "value": "carbon"
+            },
+            {
+              "selected": false,
+              "text": "cozumel",
+              "value": "cozumel"
+            },
+            {
+              "selected": false,
+              "text": "dune",
+              "value": "dune"
+            },
+            {
+              "selected": false,
+              "text": "grafana",
+              "value": "grafana"
+            },
+            {
+              "selected": false,
+              "text": "graphite",
+              "value": "graphite"
+            },
+            {
+              "selected": false,
+              "text": "harrisgeo-licensing",
+              "value": "harrisgeo-licensing"
+            },
+            {
+              "selected": false,
+              "text": "hydra",
+              "value": "hydra"
+            },
+            {
+              "selected": false,
+              "text": "hydra1",
+              "value": "hydra1"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow-21",
+              "value": "imars-airflow-21"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow-22",
+              "value": "imars-airflow-22"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow-23",
+              "value": "imars-airflow-23"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow-test",
+              "value": "imars-airflow-test"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow01",
+              "value": "imars-airflow01"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow11",
+              "value": "imars-airflow11"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow12",
+              "value": "imars-airflow12"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow13",
+              "value": "imars-airflow13"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow14",
+              "value": "imars-airflow14"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow15",
+              "value": "imars-airflow15"
+            },
+            {
+              "selected": false,
+              "text": "imars-airflow16",
+              "value": "imars-airflow16"
+            },
+            {
+              "selected": false,
+              "text": "imars-ftp",
+              "value": "imars-ftp"
+            },
+            {
+              "selected": false,
+              "text": "imars-lophelia",
+              "value": "imars-lophelia"
+            },
+            {
+              "selected": false,
+              "text": "imars-physalis",
+              "value": "imars-physalis"
+            },
+            {
+              "selected": true,
+              "text": "imars-sql-hydra",
+              "value": "imars-sql-hydra"
+            },
+            {
+              "selected": false,
+              "text": "imars-webserver-01",
+              "value": "imars-webserver-01"
+            },
+            {
+              "selected": false,
+              "text": "imars_bouys",
+              "value": "imars_bouys"
+            },
+            {
+              "selected": false,
+              "text": "imars_regions",
+              "value": "imars_regions"
+            },
+            {
+              "selected": false,
+              "text": "ipopp-master-2",
+              "value": "ipopp-master-2"
+            },
+            {
+              "selected": false,
+              "text": "ipopp02",
+              "value": "ipopp02"
+            },
+            {
+              "selected": false,
+              "text": "manglillo",
+              "value": "manglillo"
+            },
+            {
+              "selected": false,
+              "text": "mbon",
+              "value": "mbon"
+            },
+            {
+              "selected": false,
+              "text": "oceanobs-rcn",
+              "value": "oceanobs-rcn"
+            },
+            {
+              "selected": false,
+              "text": "puppet",
+              "value": "puppet"
+            },
+            {
+              "selected": false,
+              "text": "reef01",
+              "value": "reef01"
+            },
+            {
+              "selected": false,
+              "text": "reef02",
+              "value": "reef02"
+            },
+            {
+              "selected": false,
+              "text": "seabreeze",
+              "value": "seabreeze"
+            },
+            {
+              "selected": false,
+              "text": "seashell",
+              "value": "seashell"
+            },
+            {
+              "selected": false,
+              "text": "seastar",
+              "value": "seastar"
+            },
+            {
+              "selected": false,
+              "text": "siboney",
+              "value": "siboney"
+            },
+            {
+              "selected": false,
+              "text": "thing1",
+              "value": "thing1"
+            },
+            {
+              "selected": false,
+              "text": "thing2",
+              "value": "thing2"
+            },
+            {
+              "selected": false,
+              "text": "thing3",
+              "value": "thing3"
+            },
+            {
+              "selected": false,
+              "text": "tylardesk",
+              "value": "tylardesk"
+            },
+            {
+              "selected": false,
+              "text": "userproc",
+              "value": "userproc"
+            },
+            {
+              "selected": false,
+              "text": "yin",
+              "value": "yin"
+            }
+          ],
+          "query": "*",
+          "refresh": 0,
+          "regex": "",
+          "sort": 0,
+          "tagValuesQuery": "",
+          "tags": [],
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
+        }
+      ]
     },
     "time": {
-      "from": "now-15m",
+      "from": "now-3h",
       "to": "now"
     },
     "timepicker": {
@@ -1539,6 +1792,6 @@
     },
     "timezone": "",
     "title": "mysql",
-    "version": 4
+    "version": 5
   }
 }
