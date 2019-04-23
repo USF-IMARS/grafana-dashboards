@@ -7,10 +7,10 @@
     "slug": "servers-overview",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2017-09-29T18:24:22Z",
-    "updated": "2019-04-15T13:15:53Z",
+    "updated": "2019-04-22T18:48:59Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 43
+    "version": 44
   },
   "dashboard": {
     "annotations": {
@@ -250,7 +250,7 @@
                 {
                   "evaluator": {
                     "params": [
-                      49
+                      26
                     ],
                     "type": "lt"
                   },
@@ -259,8 +259,8 @@
                   },
                   "query": {
                     "params": [
-                      "B",
-                      "2h",
+                      "C",
+                      "24h",
                       "now"
                     ]
                   },
@@ -272,7 +272,7 @@
                 }
               ],
               "executionErrorState": "keep_state",
-              "frequency": "2h",
+              "frequency": "24h",
               "handler": 1,
               "message": "RAID failure detected",
               "name": "RAID drives \"OK\" count",
@@ -324,9 +324,9 @@
               },
               {
                 "hide": true,
-                "refId": "B",
-                "target": "sumSeries(*.exec.raid.disks.*)",
-                "textEditor": true
+                "refId": "C",
+                "target": "aliasByNode(sortByMaxima(thing2.exec.raid.disks.*), 0, 4)",
+                "textEditor": false
               }
             ],
             "thresholds": [
@@ -335,7 +335,7 @@
                 "fill": true,
                 "line": true,
                 "op": "lt",
-                "value": 49
+                "value": 26
               }
             ],
             "timeFrom": null,
@@ -1581,7 +1581,7 @@
         "titleSize": "h6"
       },
       {
-        "collapse": true,
+        "collapse": false,
         "height": 248,
         "panels": [
           {
@@ -1993,7 +1993,7 @@
         "titleSize": "h6"
       },
       {
-        "collapse": true,
+        "collapse": false,
         "height": 250,
         "panels": [
           {
@@ -2200,7 +2200,7 @@
       ]
     },
     "time": {
-      "from": "now-24h",
+      "from": "now-3h",
       "to": "now"
     },
     "timepicker": {
@@ -2238,6 +2238,6 @@
     },
     "timezone": "browser",
     "title": "Servers Overview",
-    "version": 43
+    "version": 44
   }
 }
