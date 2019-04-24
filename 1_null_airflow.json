@@ -7,10 +7,10 @@
     "slug": "airflow",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2017-12-06T17:45:12Z",
-    "updated": "2019-03-06T16:30:21Z",
+    "updated": "2019-04-23T13:38:12Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 43
+    "version": 44
   },
   "dashboard": {
     "annotations": {
@@ -1509,9 +1509,17 @@
           "allValue": null,
           "current": {
             "tags": [],
-            "text": "imars-airflow-21 + imars-airflow11 + imars-airflow12 + imars-airflow13 + imars-airflow14 + imars-airflow15 + imars-airflow16",
+            "text": "imars-airflow-21 + imars-airflow-22 + imars-airflow-23 + imars-airflow-24 + imars-airflow-25 + imars-airflow-26 + imars-airflow-27 + imars-airflow-28 + imars-airflow-29 + imars-airflow11 + imars-airflow12 + imars-airflow13 + imars-airflow14 + imars-airflow15 + imars-airflow16",
             "value": [
               "imars-airflow-21",
+              "imars-airflow-22",
+              "imars-airflow-23",
+              "imars-airflow-24",
+              "imars-airflow-25",
+              "imars-airflow-26",
+              "imars-airflow-27",
+              "imars-airflow-28",
+              "imars-airflow-29",
               "imars-airflow11",
               "imars-airflow12",
               "imars-airflow13",
@@ -1570,6 +1578,6 @@
     },
     "timezone": "",
     "title": "airflow",
-    "version": 43
+    "version": 44
   }
 }
