@@ -7,10 +7,10 @@
     "slug": "airflow",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2017-12-06T17:45:12Z",
-    "updated": "2019-04-23T13:38:12Z",
+    "updated": "2019-05-17T20:00:28Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 44
+    "version": 45
   },
   "dashboard": {
     "annotations": {
@@ -500,6 +500,162 @@
                 "logBase": 1,
                 "max": null,
                 "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Dashboard Row",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": false,
+        "height": 250,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "fill": 1,
+            "id": 51,
+            "legend": {
+              "avg": false,
+              "current": false,
+              "max": false,
+              "min": false,
+              "show": true,
+              "total": false,
+              "values": false
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "null",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 3,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "A",
+                "target": "*.exec.per_one_hour.imars_objects.sizes.airflow_tmp.logs"
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "size of airflow log files",
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "deckbytes",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "fill": 1,
+            "id": 52,
+            "legend": {
+              "avg": false,
+              "current": false,
+              "max": false,
+              "min": false,
+              "show": true,
+              "total": false,
+              "values": false
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "null",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 8,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "A",
+                "target": "perSecond(*.exec.per_one_hour.imars_objects.sizes.airflow_tmp.logs)"
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "d/dt size of airflow log files",
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "KBs",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
                 "show": true
               },
               {
@@ -1508,7 +1664,6 @@
         {
           "allValue": null,
           "current": {
-            "tags": [],
             "text": "imars-airflow-21 + imars-airflow-22 + imars-airflow-23 + imars-airflow-24 + imars-airflow-25 + imars-airflow-26 + imars-airflow-27 + imars-airflow-28 + imars-airflow-29 + imars-airflow11 + imars-airflow12 + imars-airflow13 + imars-airflow14 + imars-airflow15 + imars-airflow16",
             "value": [
               "imars-airflow-21",
@@ -1578,6 +1733,6 @@
     },
     "timezone": "",
     "title": "airflow",
-    "version": 44
+    "version": 45
   }
 }
