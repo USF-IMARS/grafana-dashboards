@@ -7,10 +7,10 @@
     "slug": "gulf-of-mexico",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2019-01-11T16:00:11Z",
-    "updated": "2019-01-11T16:56:47Z",
+    "updated": "2019-06-06T20:38:41Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 4
+    "version": 5
   },
   "dashboard": {
     "annotations": {
@@ -51,9 +51,11 @@
         "height": 139,
         "panels": [
           {
+            "base_url": "http://imars-physalis:8080/erddap",
             "bg_color": "0xffccccff",
             "color_bar_str": "|||||",
-            "delta": 86400000,
+            "colorbar_display": "individual",
+            "delta": 2620800000,
             "delta_unit": "ms",
             "description": "TODO: switch to weekly",
             "id": 36,
@@ -62,8 +64,9 @@
             "links": [],
             "lon_max": -79,
             "lon_min": -98,
-            "n_images": 7,
+            "n_images": 6,
             "product_id": "jplMURSST41anom1day",
+            "show_request_dates": false,
             "span": 12,
             "targets": [
               {
@@ -74,6 +77,38 @@
             "title": "SST (daily) Anomalies from coastwatch.pfeg.noaa.gov/erddap GHRSST",
             "type": "erddap-panel",
             "url": "http://imars-physalis.marine.usf.edu:8080/erddap",
+            "urls": [
+              {
+                "display": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.png?sstAnom[(2018-12-06T20:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.largePng?sstAnom[(2018-12-06T20:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "6th Dec 2018"
+              },
+              {
+                "display": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.png?sstAnom[(2019-01-06T04:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.largePng?sstAnom[(2019-01-06T04:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "6th Jan 2019"
+              },
+              {
+                "display": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.png?sstAnom[(2019-02-05T12:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.largePng?sstAnom[(2019-02-05T12:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "5th Feb 2019"
+              },
+              {
+                "display": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.png?sstAnom[(2019-03-07T20:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.largePng?sstAnom[(2019-03-07T20:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th Mar 2019"
+              },
+              {
+                "display": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.png?sstAnom[(2019-04-07T04:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.largePng?sstAnom[(2019-04-07T04:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th Apr 2019"
+              },
+              {
+                "display": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.png?sstAnom[(2019-05-07T12:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis:8080/erddap/griddap/jplMURSST41anom1day.largePng?sstAnom[(2019-05-07T12:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th May 2019"
+              }
+            ],
             "variable_id": "sstAnom"
           }
         ],
@@ -82,6 +117,225 @@
         "repeatRowId": null,
         "showTitle": false,
         "title": "$product_id",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": false,
+        "height": 250,
+        "panels": [
+          {
+            "base_url": "https://cwcgom.aoml.noaa.gov/erddap",
+            "bg_color": "0xffccccff",
+            "color_bar_str": "|||||",
+            "colorbar_display": "individual",
+            "delta": 2620800000,
+            "delta_unit": "ms",
+            "description": "",
+            "id": 46,
+            "lat_max": 31,
+            "lat_min": 18,
+            "links": [],
+            "lon_max": -79,
+            "lon_min": -98,
+            "n_images": 6,
+            "product_id": "noaa_aoml_seascapes_8day",
+            "show_request_dates": false,
+            "span": 12,
+            "targets": [
+              {
+                "refId": "A",
+                "target": ""
+              }
+            ],
+            "title": "8-day mean SeaScapes from cwcgom.aoml.noaa.gov/erddap",
+            "type": "erddap-panel",
+            "url": "http://imars-physalis.marine.usf.edu:8080/erddap",
+            "urls": [
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.png?CLASS[(2018-12-06T20:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS[(2018-12-06T20:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "6th Dec 2018"
+              },
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.png?CLASS[(2019-01-06T04:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS[(2019-01-06T04:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "6th Jan 2019"
+              },
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.png?CLASS[(2019-02-05T12:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS[(2019-02-05T12:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "5th Feb 2019"
+              },
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.png?CLASS[(2019-03-07T20:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS[(2019-03-07T20:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th Mar 2019"
+              },
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.png?CLASS[(2019-04-07T04:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS[(2019-04-07T04:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th Apr 2019"
+              },
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.png?CLASS[(2019-05-07T12:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS[(2019-05-07T12:38:00Z)][(18):(31)][(-98):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th May 2019"
+              }
+            ],
+            "variable_id": "CLASS"
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Dashboard Row",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": false,
+        "height": 250,
+        "panels": [
+          {
+            "base_url": "http://imars-physalis.marine.usf.edu:8080/erddap",
+            "bg_color": "0xffccccff",
+            "color_bar_str": "Rainbow|||-0.2|0.2|",
+            "colorbar_display": "individual",
+            "delta": 2620800001,
+            "delta_unit": "ms",
+            "description": "via MODIS",
+            "id": 48,
+            "lat_max": 23.1,
+            "lat_min": 26,
+            "links": [],
+            "lon_max": -79.1,
+            "lon_min": -85,
+            "n_images": 6,
+            "product_id": "OC_f0d3_1bc2_8172",
+            "show_request_dates": false,
+            "span": 12,
+            "targets": [
+              {
+                "refId": "A",
+                "target": ""
+              }
+            ],
+            "title": "MODIS-Aqua ABI 7-Day anomaly images (W/m^2/um/sr)",
+            "type": "erddap-panel",
+            "url": "http://imars-physalis.marine.usf.edu:8080/erddap",
+            "urls": [
+              {
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?ABI_anom[(2018-12-06T20:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?ABI_anom[(2018-12-06T20:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "6th Dec 2018"
+              },
+              {
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?ABI_anom[(2019-01-06T04:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?ABI_anom[(2019-01-06T04:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "6th Jan 2019"
+              },
+              {
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?ABI_anom[(2019-02-05T12:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?ABI_anom[(2019-02-05T12:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "5th Feb 2019"
+              },
+              {
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?ABI_anom[(2019-03-07T20:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?ABI_anom[(2019-03-07T20:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th Mar 2019"
+              },
+              {
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?ABI_anom[(2019-04-07T04:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?ABI_anom[(2019-04-07T04:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th Apr 2019"
+              },
+              {
+                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.png?ABI_anom[(2019-05-07T12:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_f0d3_1bc2_8172.largePng?ABI_anom[(2019-05-07T12:38:00Z)][(26):(23.1)][(-85):(-79.1)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th May 2019"
+              }
+            ],
+            "variable_id": "ABI_anom"
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Dashboard Row",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": false,
+        "height": 250,
+        "panels": [
+          {
+            "base_url": "https://cwcgom.aoml.noaa.gov/erddap",
+            "bg_color": "0xffccccff",
+            "color_bar_str": "|||||",
+            "colorbar_display": "individual",
+            "delta": 2620800001,
+            "delta_unit": "ms",
+            "description": "",
+            "id": 47,
+            "lat_max": 30.125,
+            "lat_min": 18,
+            "links": [],
+            "lon_max": -79,
+            "lon_min": -90.125,
+            "n_images": 6,
+            "product_id": "miamiacidification",
+            "show_request_dates": false,
+            "span": 12,
+            "targets": [
+              {
+                "refId": "A",
+                "target": ""
+              }
+            ],
+            "title": "Salinity Estimates from cwcgom.aoml.noaa.gov/erddap",
+            "type": "erddap-panel",
+            "url": "http://imars-physalis.marine.usf.edu:8080/erddap",
+            "urls": [
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.png?SSS[(2018-12-06T20:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.largePng?SSS[(2018-12-06T20:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "6th Dec 2018"
+              },
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.png?SSS[(2019-01-06T04:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.largePng?SSS[(2019-01-06T04:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "6th Jan 2019"
+              },
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.png?SSS[(2019-02-05T12:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.largePng?SSS[(2019-02-05T12:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "5th Feb 2019"
+              },
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.png?SSS[(2019-03-07T20:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.largePng?SSS[(2019-03-07T20:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th Mar 2019"
+              },
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.png?SSS[(2019-04-07T04:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.largePng?SSS[(2019-04-07T04:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th Apr 2019"
+              },
+              {
+                "display": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.png?SSS[(2019-05-07T12:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=30720%7C",
+                "link": "https://cwcgom.aoml.noaa.gov/erddap/griddap/miamiacidification.largePng?SSS[(2019-05-07T12:38:00Z)][(18):(30.125)][(-90.125):(-79)]&.draw=surface&.vars=longitude%7Clatitude%7CSSS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "7th May 2019"
+              }
+            ],
+            "variable_id": "SSS"
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Dashboard Row",
         "titleSize": "h6"
       },
       {
@@ -115,7 +369,7 @@
       "list": []
     },
     "time": {
-      "from": "now-7d",
+      "from": "now-6M",
       "to": "now"
     },
     "timepicker": {
@@ -145,6 +399,6 @@
     },
     "timezone": "",
     "title": "Gulf Of Mexico",
-    "version": 4
+    "version": 5
   }
 }
