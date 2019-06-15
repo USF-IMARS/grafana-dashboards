@@ -1,0 +1,696 @@
+{
+  "meta": {
+    "type": "db",
+    "canSave": false,
+    "canEdit": false,
+    "canStar": true,
+    "slug": "imars-user-dash",
+    "expires": "0001-01-01T00:00:00Z",
+    "created": "2019-06-14T15:35:01Z",
+    "updated": "2019-06-14T17:29:45Z",
+    "updatedBy": "admin",
+    "createdBy": "admin",
+    "version": 6
+  },
+  "dashboard": {
+    "annotations": {
+      "list": []
+    },
+    "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
+    "hideControls": false,
+    "id": 42,
+    "links": [],
+    "refresh": false,
+    "rows": [
+      {
+        "collapse": false,
+        "height": 249,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "decimals": null,
+            "fill": 4,
+            "id": 1,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": true,
+              "max": false,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": "current",
+              "sortDesc": true,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 1,
+            "points": true,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 5,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "B",
+                "target": "aliasByMetric(*.exec.per_one_day.user_homes.sizes.$username)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "total home_dir size",
+            "tooltip": {
+              "shared": false,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "deckbytes",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "decimals": null,
+            "fill": 4,
+            "id": 4,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": true,
+              "max": false,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": "current",
+              "sortDesc": true,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 1,
+            "points": true,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 5,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "B",
+                "target": "aliasByMetric(*.exec.per_one_day.user_scratch.sizes.*)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "total scratch sizes",
+            "tooltip": {
+              "shared": false,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "deckbytes",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "content": "For tips on how to find big files, duplicates, etc see [7yl4r/cheatsheets#space-saving](https://github.com/7yl4r/cheatsheets/blob/master/README.md#space-saving-tips).\n\nThese commands will run *much* faster on the file server (`yin`) directly.",
+            "description": "",
+            "id": 6,
+            "links": [],
+            "mode": "markdown",
+            "span": 2,
+            "title": "Tips",
+            "type": "text"
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": true,
+        "title": "total storage usage",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": true,
+        "height": 250,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "decimals": null,
+            "fill": 4,
+            "id": 3,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": true,
+              "max": false,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": null,
+              "sortDesc": null,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 1,
+            "points": true,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "B",
+                "target": "*.exec.per_one_hour.user_homes.sizes.$username",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "user home sizes by server",
+            "tooltip": {
+              "shared": false,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "deckbytes",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "decimals": null,
+            "fill": 4,
+            "id": 5,
+            "legend": {
+              "alignAsTable": true,
+              "avg": false,
+              "current": true,
+              "max": false,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": null,
+              "sortDesc": null,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 1,
+            "points": true,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 6,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "B",
+                "target": "*.exec.per_one_hour.user_scratch.sizes.$username",
+                "textEditor": true
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "user scratch sizes by server",
+            "tooltip": {
+              "shared": false,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "deckbytes",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": true,
+        "title": "storage usage by server",
+        "titleSize": "h6"
+      }
+    ],
+    "schemaVersion": 14,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+      "list": [
+        {
+          "allValue": null,
+          "current": {
+            "tags": [],
+            "text": "All",
+            "value": [
+              "$__all"
+            ]
+          },
+          "datasource": "IMaRS graphite server",
+          "hide": 0,
+          "includeAll": true,
+          "label": null,
+          "multi": true,
+          "name": "username",
+          "options": [
+            {
+              "selected": true,
+              "text": "All",
+              "value": "$__all"
+            },
+            {
+              "selected": false,
+              "text": "yrene",
+              "value": "yrene"
+            },
+            {
+              "selected": false,
+              "text": "xband",
+              "value": "xband"
+            },
+            {
+              "selected": false,
+              "text": "user_uas",
+              "value": "user_uas"
+            },
+            {
+              "selected": false,
+              "text": "torofarmer",
+              "value": "torofarmer"
+            },
+            {
+              "selected": false,
+              "text": "test",
+              "value": "test"
+            },
+            {
+              "selected": false,
+              "text": "tess",
+              "value": "tess"
+            },
+            {
+              "selected": false,
+              "text": "shartman2",
+              "value": "shartman2"
+            },
+            {
+              "selected": false,
+              "text": "sennai",
+              "value": "sennai"
+            },
+            {
+              "selected": false,
+              "text": "sebastian",
+              "value": "sebastian"
+            },
+            {
+              "selected": false,
+              "text": "scratch",
+              "value": "scratch"
+            },
+            {
+              "selected": false,
+              "text": "samira_gaiad",
+              "value": "samira_gaiad"
+            },
+            {
+              "selected": false,
+              "text": "rwooten",
+              "value": "rwooten"
+            },
+            {
+              "selected": false,
+              "text": "remy",
+              "value": "remy"
+            },
+            {
+              "selected": false,
+              "text": "rbohrer",
+              "value": "rbohrer"
+            },
+            {
+              "selected": false,
+              "text": "qiao",
+              "value": "qiao"
+            },
+            {
+              "selected": false,
+              "text": "projects",
+              "value": "projects"
+            },
+            {
+              "selected": false,
+              "text": "pooya",
+              "value": "pooya"
+            },
+            {
+              "selected": false,
+              "text": "pablo",
+              "value": "pablo"
+            },
+            {
+              "selected": false,
+              "text": "oo_class",
+              "value": "oo_class"
+            },
+            {
+              "selected": false,
+              "text": "mvega",
+              "value": "mvega"
+            },
+            {
+              "selected": false,
+              "text": "mostafaalmaghraby",
+              "value": "mostafaalmaghraby"
+            },
+            {
+              "selected": false,
+              "text": "mostafa",
+              "value": "mostafa"
+            },
+            {
+              "selected": false,
+              "text": "mmccarthy",
+              "value": "mmccarthy"
+            },
+            {
+              "selected": false,
+              "text": "mahmoudelmezayen",
+              "value": "mahmoudelmezayen"
+            },
+            {
+              "selected": false,
+              "text": "luislizcanos",
+              "value": "luislizcanos"
+            },
+            {
+              "selected": false,
+              "text": "lisavan",
+              "value": "lisavan"
+            },
+            {
+              "selected": false,
+              "text": "laural",
+              "value": "laural"
+            },
+            {
+              "selected": false,
+              "text": "lab_guest",
+              "value": "lab_guest"
+            },
+            {
+              "selected": false,
+              "text": "kbaah",
+              "value": "kbaah"
+            },
+            {
+              "selected": false,
+              "text": "kate",
+              "value": "kate"
+            },
+            {
+              "selected": false,
+              "text": "justin",
+              "value": "justin"
+            },
+            {
+              "selected": false,
+              "text": "juanmillan",
+              "value": "juanmillan"
+            },
+            {
+              "selected": false,
+              "text": "jaimajo",
+              "value": "jaimajo"
+            },
+            {
+              "selected": false,
+              "text": "inymar",
+              "value": "inymar"
+            },
+            {
+              "selected": false,
+              "text": "imars-objects",
+              "value": "imars-objects"
+            },
+            {
+              "selected": false,
+              "text": "gtoro",
+              "value": "gtoro"
+            },
+            {
+              "selected": false,
+              "text": "executive",
+              "value": "executive"
+            },
+            {
+              "selected": false,
+              "text": "enrique",
+              "value": "enrique"
+            },
+            {
+              "selected": false,
+              "text": "eklein",
+              "value": "eklein"
+            },
+            {
+              "selected": false,
+              "text": "dotis2",
+              "value": "dotis2"
+            },
+            {
+              "selected": false,
+              "text": "dotis",
+              "value": "dotis"
+            },
+            {
+              "selected": false,
+              "text": "datashare",
+              "value": "datashare"
+            },
+            {
+              "selected": false,
+              "text": "cjreynolds",
+              "value": "cjreynolds"
+            },
+            {
+              "selected": false,
+              "text": "chen",
+              "value": "chen"
+            },
+            {
+              "selected": false,
+              "text": "cestes",
+              "value": "cestes"
+            },
+            {
+              "selected": false,
+              "text": "carib",
+              "value": "carib"
+            },
+            {
+              "selected": false,
+              "text": "account",
+              "value": "account"
+            },
+            {
+              "selected": false,
+              "text": "_trash",
+              "value": "_trash"
+            },
+            {
+              "selected": false,
+              "text": "WV_Working",
+              "value": "WV_Working"
+            },
+            {
+              "selected": false,
+              "text": "README",
+              "value": "README"
+            }
+          ],
+          "query": "*.exec.per_one_day.user_homes.sizes.*",
+          "refresh": 0,
+          "regex": "",
+          "sort": 2,
+          "tagValuesQuery": "",
+          "tags": [],
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
+        }
+      ]
+    },
+    "time": {
+      "from": "now-30d",
+      "to": "now"
+    },
+    "timepicker": {
+      "refresh_intervals": [
+        "5s",
+        "10s",
+        "30s",
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h",
+        "2h",
+        "1d"
+      ],
+      "time_options": [
+        "5m",
+        "15m",
+        "1h",
+        "6h",
+        "12h",
+        "24h",
+        "2d",
+        "7d",
+        "30d"
+      ]
+    },
+    "timezone": "",
+    "title": "IMaRS User Dash",
+    "version": 6
+  }
+}
