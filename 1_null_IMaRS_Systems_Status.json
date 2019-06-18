@@ -7,10 +7,10 @@
     "slug": "imars-systems-status",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2018-08-13T19:55:47Z",
-    "updated": "2019-01-18T17:33:57Z",
+    "updated": "2019-06-17T16:27:47Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 17
+    "version": 18
   },
   "dashboard": {
     "annotations": {
@@ -158,7 +158,7 @@
               }
             ],
             "repeat": null,
-            "repeatIteration": 1547678501226,
+            "repeatIteration": 1560788841397,
             "repeatPanelId": 1,
             "scopedVars": {
               "compute_servers": {
@@ -243,7 +243,7 @@
               }
             ],
             "repeat": null,
-            "repeatIteration": 1547678501226,
+            "repeatIteration": 1560788841397,
             "repeatPanelId": 1,
             "scopedVars": {
               "compute_servers": {
@@ -328,7 +328,7 @@
               }
             ],
             "repeat": null,
-            "repeatIteration": 1547678501226,
+            "repeatIteration": 1560788841397,
             "repeatPanelId": 1,
             "scopedVars": {
               "compute_servers": {
@@ -413,7 +413,7 @@
               }
             ],
             "repeat": null,
-            "repeatIteration": 1547678501226,
+            "repeatIteration": 1560788841397,
             "repeatPanelId": 1,
             "scopedVars": {
               "compute_servers": {
@@ -498,7 +498,7 @@
               }
             ],
             "repeat": null,
-            "repeatIteration": 1547678501226,
+            "repeatIteration": 1560788841397,
             "repeatPanelId": 1,
             "scopedVars": {
               "compute_servers": {
@@ -583,7 +583,7 @@
               }
             ],
             "repeat": null,
-            "repeatIteration": 1547678501226,
+            "repeatIteration": 1560788841397,
             "repeatPanelId": 1,
             "scopedVars": {
               "compute_servers": {
@@ -668,7 +668,7 @@
               }
             ],
             "repeat": null,
-            "repeatIteration": 1547678501226,
+            "repeatIteration": 1560788841397,
             "repeatPanelId": 1,
             "scopedVars": {
               "compute_servers": {
@@ -848,7 +848,7 @@
               }
             ],
             "repeat": null,
-            "repeatIteration": 1547678501226,
+            "repeatIteration": 1560788841397,
             "repeatPanelId": 5,
             "scopedVars": {
               "data_servers": {
@@ -933,7 +933,7 @@
               }
             ],
             "repeat": null,
-            "repeatIteration": 1547678501226,
+            "repeatIteration": 1560788841397,
             "repeatPanelId": 5,
             "scopedVars": {
               "data_servers": {
@@ -1018,7 +1018,7 @@
               }
             ],
             "repeat": null,
-            "repeatIteration": 1547678501226,
+            "repeatIteration": 1560788841397,
             "repeatPanelId": 5,
             "scopedVars": {
               "data_servers": {
@@ -1103,7 +1103,7 @@
               }
             ],
             "repeat": null,
-            "repeatIteration": 1547678501226,
+            "repeatIteration": 1560788841397,
             "repeatPanelId": 5,
             "scopedVars": {
               "data_servers": {
@@ -2099,7 +2099,8 @@
     "schemaVersion": 14,
     "style": "dark",
     "tags": [
-      "sysadmin"
+      "sysadmin",
+      "user-facing"
     ],
     "templating": {
       "list": [
@@ -2394,6 +2395,6 @@
     },
     "timezone": "",
     "title": "IMaRS Systems Status",
-    "version": 17
+    "version": 18
   }
 }

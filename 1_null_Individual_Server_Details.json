@@ -7,10 +7,10 @@
     "slug": "individual-server-details",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2017-09-29T18:25:07Z",
-    "updated": "2019-02-06T17:56:46Z",
+    "updated": "2019-06-17T16:28:36Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 14
+    "version": 15
   },
   "dashboard": {
     "annotations": {
@@ -2042,7 +2042,8 @@
     "schemaVersion": 14,
     "style": "dark",
     "tags": [
-      "sysadmin"
+      "sysadmin",
+      "user-facing"
     ],
     "templating": {
       "list": [
@@ -2050,7 +2051,6 @@
           "allFormat": "glob",
           "allValue": null,
           "current": {
-            "tags": [],
             "text": "seashell",
             "value": "seashell"
           },
@@ -2114,6 +2114,6 @@
     },
     "timezone": "browser",
     "title": "Individual Server Details",
-    "version": 14
+    "version": 15
   }
 }
