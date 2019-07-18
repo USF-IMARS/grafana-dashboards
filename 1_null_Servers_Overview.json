@@ -7,10 +7,10 @@
     "slug": "servers-overview",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2017-09-29T18:24:22Z",
-    "updated": "2019-04-22T18:48:59Z",
+    "updated": "2019-07-17T20:14:29Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 44
+    "version": 45
   },
   "dashboard": {
     "annotations": {
@@ -269,6 +269,29 @@
                     "type": "min"
                   },
                   "type": "query"
+                },
+                {
+                  "evaluator": {
+                    "params": [
+                      24
+                    ],
+                    "type": "lt"
+                  },
+                  "operator": {
+                    "type": "or"
+                  },
+                  "query": {
+                    "params": [
+                      "B",
+                      "24h",
+                      "now"
+                    ]
+                  },
+                  "reducer": {
+                    "params": [],
+                    "type": "min"
+                  },
+                  "type": "query"
                 }
               ],
               "executionErrorState": "keep_state",
@@ -296,6 +319,8 @@
               "alignAsTable": true,
               "avg": false,
               "current": true,
+              "hideEmpty": true,
+              "hideZero": false,
               "max": true,
               "min": true,
               "rightSide": true,
@@ -306,7 +331,7 @@
             "lines": false,
             "linewidth": 1,
             "links": [],
-            "nullPointMode": "null as zero",
+            "nullPointMode": "connected",
             "percentage": false,
             "pointradius": 1,
             "points": false,
@@ -318,6 +343,7 @@
             "steppedLine": false,
             "targets": [
               {
+                "hide": false,
                 "refId": "A",
                 "target": "aliasByNode(sortByMaxima($Server.exec.raid.disks.*), 0, 4)",
                 "textEditor": false
@@ -326,6 +352,12 @@
                 "hide": true,
                 "refId": "C",
                 "target": "aliasByNode(sortByMaxima(thing2.exec.raid.disks.*), 0, 4)",
+                "textEditor": false
+              },
+              {
+                "hide": true,
+                "refId": "B",
+                "target": "aliasByNode(sortByMaxima(thing1.exec.raid.disks.*), 0, 4)",
                 "textEditor": false
               }
             ],
@@ -2238,6 +2270,6 @@
     },
     "timezone": "browser",
     "title": "Servers Overview",
-    "version": 44
+    "version": 45
   }
 }

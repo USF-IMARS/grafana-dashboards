@@ -7,10 +7,10 @@
     "slug": "imars-user-dash",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2019-06-14T15:35:01Z",
-    "updated": "2019-06-17T16:28:13Z",
+    "updated": "2019-07-17T20:24:59Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 7
+    "version": 8
   },
   "dashboard": {
     "annotations": {
@@ -45,8 +45,8 @@
               "min": false,
               "rightSide": true,
               "show": true,
-              "sort": "current",
-              "sortDesc": true,
+              "sort": null,
+              "sortDesc": null,
               "total": false,
               "values": true
             },
@@ -66,7 +66,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(*.exec.per_one_day.user_homes.sizes.$username)",
+                "target": "aliasByMetric(sortByMaxima(*.exec.per_one_day.user_homes.sizes.$username))",
                 "textEditor": false
               }
             ],
@@ -123,8 +123,8 @@
               "min": false,
               "rightSide": true,
               "show": true,
-              "sort": "current",
-              "sortDesc": true,
+              "sort": null,
+              "sortDesc": null,
               "total": false,
               "values": true
             },
@@ -144,7 +144,7 @@
             "targets": [
               {
                 "refId": "B",
-                "target": "aliasByMetric(*.exec.per_one_day.user_scratch.sizes.*)",
+                "target": "aliasByMetric(sortByMaxima(*.exec.per_one_day.user_scratch.sizes.*))",
                 "textEditor": false
               }
             ],
@@ -693,6 +693,6 @@
     },
     "timezone": "",
     "title": "IMaRS User Dash",
-    "version": 7
+    "version": 8
   }
 }
