@@ -7,10 +7,10 @@
     "slug": "imars-objects",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2018-12-21T17:12:53Z",
-    "updated": "2019-05-18T00:14:21Z",
+    "updated": "2019-07-23T16:13:20Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 12
+    "version": 13
   },
   "dashboard": {
     "annotations": {
@@ -67,12 +67,13 @@
               {
                 "hide": true,
                 "refId": "A",
-                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.*), 5, 0)",
+                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.$regions), 5, 0)",
                 "textEditor": true
               },
               {
+                "hide": false,
                 "refId": "B",
-                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode($servers.exec.per_one_hour.imars_objects.sizes.*.*, 5), 5))",
+                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode($servers.exec.per_one_hour.imars_objects.sizes.$regions.*, 5), 5))",
                 "textEditor": true
               }
             ],
@@ -151,12 +152,12 @@
               {
                 "hide": true,
                 "refId": "A",
-                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.*), 5, 0)",
+                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.$regions), 5, 0)",
                 "textEditor": true
               },
               {
                 "refId": "B",
-                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode(perSecond($servers.exec.per_one_hour.imars_objects.sizes.*.*), 5), 5))",
+                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode(perSecond($servers.exec.per_one_hour.imars_objects.sizes.$regions.*), 5), 5))",
                 "textEditor": true
               }
             ],
@@ -247,12 +248,12 @@
               {
                 "hide": true,
                 "refId": "A",
-                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.*), 5, 0)",
+                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.$regions), 5, 0)",
                 "textEditor": true
               },
               {
                 "refId": "B",
-                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode($servers.exec.per_one_hour.imars_objects.sizes.*.*, 6), 6))",
+                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode($servers.exec.per_one_hour.imars_objects.sizes.$regions.*, 6), 6))",
                 "textEditor": true
               }
             ],
@@ -331,12 +332,12 @@
               {
                 "hide": true,
                 "refId": "A",
-                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.*), 5, 0)",
+                "target": "aliasByNode(sortByMaxima($servers.exec.per_one_hour.imars_objects.size.$regions), 5, 0)",
                 "textEditor": true
               },
               {
                 "refId": "B",
-                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode(perSecond($servers.exec.per_one_hour.imars_objects.sizes.*.*), 6),1))",
+                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode(perSecond($servers.exec.per_one_hour.imars_objects.sizes.$regions.*), 6),1))",
                 "textEditor": true
               }
             ],
@@ -432,7 +433,7 @@
               },
               {
                 "refId": "B",
-                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode($servers.exec.per_one_hour.imars_objects.sizes.*.*, 0,6), 1))",
+                "target": "sortByMaxima(sumSeriesWithWildcards(aliasByNode($servers.exec.per_one_hour.imars_objects.sizes.$regions.*, 0,6), 1))",
                 "textEditor": true
               }
             ],
@@ -725,6 +726,32 @@
           "tagsQuery": "",
           "type": "query",
           "useTags": false
+        },
+        {
+          "allValue": null,
+          "current": {
+            "tags": [],
+            "text": "All",
+            "value": [
+              "$__all"
+            ]
+          },
+          "datasource": "IMaRS graphite server",
+          "hide": 0,
+          "includeAll": true,
+          "label": null,
+          "multi": true,
+          "name": "regions",
+          "options": [],
+          "query": "$servers.exec.per_one_hour.imars_objects.sizes.*",
+          "refresh": 1,
+          "regex": "",
+          "sort": 0,
+          "tagValuesQuery": "",
+          "tags": [],
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
         }
       ]
     },
@@ -759,6 +786,6 @@
     },
     "timezone": "",
     "title": "imars-objects",
-    "version": 12
+    "version": 13
   }
 }
