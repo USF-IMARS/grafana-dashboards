@@ -7,10 +7,10 @@
     "slug": "airflow",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2017-12-06T17:45:12Z",
-    "updated": "2019-07-30T19:21:01Z",
+    "updated": "2019-08-09T20:36:31Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 48
+    "version": 49
   },
   "dashboard": {
     "annotations": {
@@ -1664,9 +1664,11 @@
         {
           "allValue": null,
           "current": {
-            "text": "imars-airflow-fungia + imars-airflow11 + imars-airflow15 + imars-airflow17 + js-17-186",
+            "text": "imars-airflow-fungia + imars-airflow-rugosa + imars-airflow-tubastraea + imars-airflow11 + imars-airflow15 + imars-airflow17 + js-17-186",
             "value": [
               "imars-airflow-fungia",
+              "imars-airflow-rugosa",
+              "imars-airflow-tubastraea",
               "imars-airflow11",
               "imars-airflow15",
               "imars-airflow17",
@@ -1723,6 +1725,6 @@
     },
     "timezone": "",
     "title": "airflow",
-    "version": 48
+    "version": 49
   }
 }
