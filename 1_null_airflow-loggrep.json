@@ -7,10 +7,10 @@
     "slug": "airflow-loggrep",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2019-04-16T15:05:46Z",
-    "updated": "2019-04-16T15:08:11Z",
+    "updated": "2019-09-10T18:46:06Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 2
+    "version": 3
   },
   "dashboard": {
     "annotations": {
@@ -24,7 +24,7 @@
     "links": [],
     "rows": [
       {
-        "collapse": false,
+        "collapse": true,
         "height": "250px",
         "panels": [
           {
@@ -193,7 +193,7 @@
         "titleSize": "h6"
       },
       {
-        "collapse": false,
+        "collapse": true,
         "height": 250,
         "panels": [
           {
@@ -229,13 +229,104 @@
             "renderer": "flot",
             "seriesOverrides": [],
             "spaceLength": 10,
+            "span": 6,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "refId": "A",
+                "target": "aliasByNode(perSecond(*.exec.per_one_hour.airflow.logs.select metric), 0, 6)"
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Panel Title",
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Dashboard Row",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": false,
+        "height": 250,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "fill": 1,
+            "id": 5,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": false,
+              "hideEmpty": true,
+              "hideZero": true,
+              "max": true,
+              "min": false,
+              "rightSide": true,
+              "show": true,
+              "sort": "total",
+              "sortDesc": true,
+              "total": true,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
             "span": 12,
             "stack": false,
             "steppedLine": false,
             "targets": [
               {
                 "refId": "A",
-                "target": "aliasByNode(perSecond(*.exec.per_ten_min.airflow.logs.$dag_selection.*), 0, 6)"
+                "target": "aliasByNode(*.exec.per_one_hour.airflow.logs.*.*, 5, 5)",
+                "textEditor": false
               }
             ],
             "thresholds": [],
@@ -314,7 +405,7 @@
       ]
     },
     "time": {
-      "from": "now-12h",
+      "from": "now-7d",
       "to": "now"
     },
     "timepicker": {
@@ -344,6 +435,6 @@
     },
     "timezone": "",
     "title": "airflow-loggrep",
-    "version": 2
+    "version": 3
   }
 }
