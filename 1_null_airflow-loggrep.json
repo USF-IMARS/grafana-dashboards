@@ -7,10 +7,10 @@
     "slug": "airflow-loggrep",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2019-04-16T15:05:46Z",
-    "updated": "2019-09-10T18:46:06Z",
+    "updated": "2019-10-04T16:30:06Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 3
+    "version": 4
   },
   "dashboard": {
     "annotations": {
@@ -23,6 +23,378 @@
     "id": 41,
     "links": [],
     "rows": [
+      {
+        "collapse": false,
+        "height": 250,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "fill": 1,
+            "id": 6,
+            "legend": {
+              "alignAsTable": true,
+              "avg": true,
+              "current": true,
+              "hideEmpty": true,
+              "hideZero": false,
+              "max": true,
+              "min": true,
+              "rightSide": true,
+              "show": true,
+              "sort": "total",
+              "sortDesc": true,
+              "total": false,
+              "values": true
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": true,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 12,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": false,
+                "refId": "A",
+                "target": "sortByMaxima(groupByNode(*.exec.per_one_hour.airflow.logs.$dag_selection.*, 6, 'sum'))",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "$dag_selection DAG Log Grep Results - Percents Across all nodes",
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "short",
+                "label": "",
+                "logBase": 1,
+                "max": "100",
+                "min": "0",
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": false
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Dashboard Row",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": false,
+        "height": 250,
+        "panels": [
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "fill": 1,
+            "id": 5,
+            "legend": {
+              "alignAsTable": false,
+              "avg": false,
+              "current": false,
+              "hideEmpty": true,
+              "hideZero": true,
+              "max": false,
+              "min": false,
+              "rightSide": false,
+              "show": true,
+              "sort": "total",
+              "sortDesc": true,
+              "total": false,
+              "values": false
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "repeat": "grep_name",
+            "scopedVars": {
+              "grep_name": {
+                "selected": false,
+                "text": "file_not_found",
+                "value": "file_not_found"
+              }
+            },
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 4,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": false,
+                "refId": "A",
+                "target": "aliasByNode(*.exec.per_one_hour.airflow.logs.$dag_selection.$grep_name, 0)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Logs with \"$grep_name\" by Node",
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "fill": 1,
+            "id": 7,
+            "legend": {
+              "alignAsTable": false,
+              "avg": false,
+              "current": false,
+              "hideEmpty": true,
+              "hideZero": true,
+              "max": false,
+              "min": false,
+              "rightSide": false,
+              "show": true,
+              "sort": "total",
+              "sortDesc": true,
+              "total": false,
+              "values": false
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "repeat": null,
+            "repeatIteration": 1570127805523,
+            "repeatPanelId": 5,
+            "scopedVars": {
+              "grep_name": {
+                "selected": false,
+                "text": "success",
+                "value": "success"
+              }
+            },
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 4,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": false,
+                "refId": "A",
+                "target": "aliasByNode(*.exec.per_one_hour.airflow.logs.$dag_selection.$grep_name, 0)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Logs with \"$grep_name\" by Node",
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          },
+          {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": null,
+            "fill": 1,
+            "id": 8,
+            "legend": {
+              "alignAsTable": false,
+              "avg": false,
+              "current": false,
+              "hideEmpty": true,
+              "hideZero": true,
+              "max": false,
+              "min": false,
+              "rightSide": false,
+              "show": true,
+              "sort": "total",
+              "sortDesc": true,
+              "total": false,
+              "values": false
+            },
+            "lines": true,
+            "linewidth": 1,
+            "links": [],
+            "nullPointMode": "connected",
+            "percentage": false,
+            "pointradius": 5,
+            "points": false,
+            "renderer": "flot",
+            "repeat": null,
+            "repeatIteration": 1570127805523,
+            "repeatPanelId": 5,
+            "scopedVars": {
+              "grep_name": {
+                "selected": false,
+                "text": "unmatched",
+                "value": "unmatched"
+              }
+            },
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "span": 4,
+            "stack": false,
+            "steppedLine": false,
+            "targets": [
+              {
+                "hide": false,
+                "refId": "A",
+                "target": "aliasByNode(*.exec.per_one_hour.airflow.logs.$dag_selection.$grep_name, 0)",
+                "textEditor": false
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Logs with \"$grep_name\" by Node",
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ]
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Dashboard Row",
+        "titleSize": "h6"
+      },
       {
         "collapse": true,
         "height": "250px",
@@ -281,97 +653,6 @@
         "showTitle": false,
         "title": "Dashboard Row",
         "titleSize": "h6"
-      },
-      {
-        "collapse": false,
-        "height": 250,
-        "panels": [
-          {
-            "aliasColors": {},
-            "bars": false,
-            "dashLength": 10,
-            "dashes": false,
-            "datasource": null,
-            "fill": 1,
-            "id": 5,
-            "legend": {
-              "alignAsTable": true,
-              "avg": true,
-              "current": false,
-              "hideEmpty": true,
-              "hideZero": true,
-              "max": true,
-              "min": false,
-              "rightSide": true,
-              "show": true,
-              "sort": "total",
-              "sortDesc": true,
-              "total": true,
-              "values": true
-            },
-            "lines": true,
-            "linewidth": 1,
-            "links": [],
-            "nullPointMode": "connected",
-            "percentage": false,
-            "pointradius": 5,
-            "points": false,
-            "renderer": "flot",
-            "seriesOverrides": [],
-            "spaceLength": 10,
-            "span": 12,
-            "stack": false,
-            "steppedLine": false,
-            "targets": [
-              {
-                "refId": "A",
-                "target": "aliasByNode(*.exec.per_one_hour.airflow.logs.*.*, 5, 5)",
-                "textEditor": false
-              }
-            ],
-            "thresholds": [],
-            "timeFrom": null,
-            "timeShift": null,
-            "title": "Panel Title",
-            "tooltip": {
-              "shared": true,
-              "sort": 0,
-              "value_type": "individual"
-            },
-            "type": "graph",
-            "xaxis": {
-              "buckets": null,
-              "mode": "time",
-              "name": null,
-              "show": true,
-              "values": []
-            },
-            "yaxes": [
-              {
-                "format": "short",
-                "label": null,
-                "logBase": 1,
-                "max": null,
-                "min": null,
-                "show": true
-              },
-              {
-                "format": "short",
-                "label": null,
-                "logBase": 1,
-                "max": null,
-                "min": null,
-                "show": true
-              }
-            ]
-          }
-        ],
-        "repeat": null,
-        "repeatIteration": null,
-        "repeatRowId": null,
-        "showTitle": false,
-        "title": "Dashboard Row",
-        "titleSize": "h6"
       }
     ],
     "schemaVersion": 14,
@@ -382,8 +663,8 @@
         {
           "allValue": null,
           "current": {
-            "text": "processing_wv2_unzip_X",
-            "value": "processing_wv2_unzip_X"
+            "text": "file_watcher",
+            "value": "file_watcher"
           },
           "datasource": "IMaRS graphite server",
           "hide": 0,
@@ -392,7 +673,32 @@
           "multi": false,
           "name": "dag_selection",
           "options": [],
-          "query": "*.exec.per_ten_min.airflow.logs.processing_wv2_unzip_X",
+          "query": "*.exec.per_one_hour.airflow.logs.*",
+          "refresh": 2,
+          "regex": "",
+          "sort": 0,
+          "tagValuesQuery": "",
+          "tags": [],
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
+        },
+        {
+          "allValue": null,
+          "current": {
+            "text": "All",
+            "value": [
+              "$__all"
+            ]
+          },
+          "datasource": "IMaRS graphite server",
+          "hide": 0,
+          "includeAll": true,
+          "label": null,
+          "multi": true,
+          "name": "grep_name",
+          "options": [],
+          "query": "*.exec.per_one_hour.airflow.logs.$dag_selection.*",
           "refresh": 2,
           "regex": "",
           "sort": 0,
@@ -435,6 +741,6 @@
     },
     "timezone": "",
     "title": "airflow-loggrep",
-    "version": 3
+    "version": 4
   }
 }
