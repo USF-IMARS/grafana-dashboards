@@ -7,10 +7,10 @@
     "slug": "servers-overview",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2017-09-29T18:24:22Z",
-    "updated": "2019-07-17T20:14:29Z",
+    "updated": "2019-10-07T17:13:18Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 45
+    "version": 46
   },
   "dashboard": {
     "annotations": {
@@ -694,13 +694,14 @@
               "alignAsTable": true,
               "avg": true,
               "current": false,
+              "hideEmpty": true,
               "max": true,
               "min": false,
               "rightSide": true,
               "show": true,
               "sideWidth": null,
-              "sort": null,
-              "sortDesc": null,
+              "sort": "avg",
+              "sortDesc": true,
               "total": false,
               "values": true
             },
@@ -2270,6 +2271,6 @@
     },
     "timezone": "browser",
     "title": "Servers Overview",
-    "version": 45
+    "version": 46
   }
 }
