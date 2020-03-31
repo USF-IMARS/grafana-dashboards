@@ -7,10 +7,10 @@
     "slug": "individual-server-details",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2017-09-29T18:25:07Z",
-    "updated": "2019-11-26T19:42:39Z",
+    "updated": "2020-03-30T15:20:54Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 16
+    "version": 18
   },
   "dashboard": {
     "annotations": {
@@ -2052,8 +2052,8 @@
           "allValue": null,
           "current": {
             "tags": [],
-            "text": "imars-physalis",
-            "value": "imars-physalis"
+            "text": "seashell",
+            "value": "seashell"
           },
           "datasource": "IMaRS graphite server",
           "hide": 0,
@@ -2077,7 +2077,7 @@
       ]
     },
     "time": {
-      "from": "now-6h",
+      "from": "now-7d",
       "to": "now"
     },
     "timepicker": {
@@ -2115,6 +2115,6 @@
     },
     "timezone": "browser",
     "title": "Individual Server Details",
-    "version": 16
+    "version": 18
   }
 }
