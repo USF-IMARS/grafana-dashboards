@@ -7,10 +7,10 @@
     "slug": "fk-coral-disease-early-alert-dashboard",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2020-03-09T13:45:36Z",
-    "updated": "2020-05-27T20:40:16Z",
+    "updated": "2020-05-29T20:50:11Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 68
+    "version": 74
   },
   "dashboard": {
     "annotations": {
@@ -1290,7 +1290,7 @@
                 "label": "m^3/sec",
                 "logBase": 1,
                 "max": null,
-                "min": null,
+                "min": "-200",
                 "show": true
               },
               {
@@ -1502,6 +1502,27 @@
         "height": 250,
         "panels": [
           {
+            "content": "# Links to data via FWC ",
+            "id": 74,
+            "links": [],
+            "mode": "markdown",
+            "span": 12,
+            "title": "Data Access",
+            "type": "text"
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Data Download options",
+        "titleSize": "h6"
+      },
+      {
+        "collapse": false,
+        "height": 250,
+        "panels": [
+          {
             "columns": [],
             "datasource": "FWC Coral Data",
             "fontSize": "100%",
@@ -1641,8 +1662,10 @@
         {
           "allValue": null,
           "current": {
-            "text": "SLI",
-            "value": "SLI"
+            "text": "MIA",
+            "value": [
+              "MIA"
+            ]
           },
           "datasource": "IMaRS graphite server",
           "hide": 0,
@@ -1664,8 +1687,11 @@
         {
           "allValue": null,
           "current": {
-            "text": "anomaly",
-            "value": "anomaly"
+            "text": "climatology + mean",
+            "value": [
+              "climatology",
+              "mean"
+            ]
           },
           "datasource": "IMaRS graphite server",
           "hide": 0,
@@ -1675,17 +1701,17 @@
           "name": "timeseries_displays",
           "options": [
             {
-              "selected": true,
+              "selected": false,
               "text": "anomaly",
               "value": "anomaly"
             },
             {
-              "selected": false,
+              "selected": true,
               "text": "climatology",
               "value": "climatology"
             },
             {
-              "selected": false,
+              "selected": true,
               "text": "mean",
               "value": "mean"
             }
@@ -1733,6 +1759,6 @@
     },
     "timezone": "",
     "title": "FK Coral Disease Early-Alert Dashboard",
-    "version": 68
+    "version": 74
   }
 }
