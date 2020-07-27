@@ -7,10 +7,10 @@
     "slug": "fk-coral-disease-early-alert-dashboard",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2020-03-09T13:45:36Z",
-    "updated": "2020-07-25T22:16:45Z",
+    "updated": "2020-07-26T19:19:41Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 109
+    "version": 110
   },
   "dashboard": {
     "annotations": {
@@ -55,7 +55,7 @@
         "titleSize": "h6"
       },
       {
-        "collapse": false,
+        "collapse": true,
         "height": 194,
         "panels": [
           {
@@ -128,7 +128,7 @@
         "titleSize": "h6"
       },
       {
-        "collapse": false,
+        "collapse": true,
         "height": 152,
         "panels": [
           {
@@ -201,7 +201,7 @@
         "titleSize": "h6"
       },
       {
-        "collapse": false,
+        "collapse": true,
         "height": -10,
         "panels": [
           {
@@ -274,7 +274,7 @@
         "titleSize": "h6"
       },
       {
-        "collapse": false,
+        "collapse": true,
         "height": 149,
         "panels": [
           {
@@ -347,7 +347,7 @@
         "titleSize": "h6"
       },
       {
-        "collapse": false,
+        "collapse": true,
         "height": 166,
         "panels": [
           {
@@ -434,7 +434,7 @@
         "titleSize": "h6"
       },
       {
-        "collapse": false,
+        "collapse": true,
         "height": 346,
         "panels": [
           {
@@ -522,7 +522,7 @@
         "height": 250,
         "panels": [
           {
-            "content": "\n\n\n\n\n\n\n\n\n\n\n<a href=\"http://imars-webserver-01.marine.usf.edu/fk/FWC_2014001_2014365_CD_obs.png\"><img src=\"http://imars-webserver-01.marine.usf.edu/fk/FWC_2014001_2014365_CD_obs.png\"></img></a>",
+            "content": "\n\n\n\n\n\n\n\n\n\n\n<a href=\"https://raw.githubusercontent.com/marinebon/mbon-dashboard-server/master/static_files/FWC_2014001_2014365_CD_obs.png\"><img src=\"https://raw.githubusercontent.com/marinebon/mbon-dashboard-server/master/static_files/FWC_2014001_2014365_CD_obs.png\"></img></a>",
             "id": 69,
             "links": [],
             "mode": "html",
@@ -1895,6 +1895,6 @@
     },
     "timezone": "",
     "title": "FK Coral Disease Early-Alert Dashboard",
-    "version": 109
+    "version": 110
   }
 }
