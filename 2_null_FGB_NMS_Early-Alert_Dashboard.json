@@ -7,10 +7,10 @@
     "slug": "fgb-nms-early-alert-dashboard",
     "expires": "0001-01-01T00:00:00Z",
     "created": "2019-02-14T16:52:36Z",
-    "updated": "2020-05-13T15:21:20Z",
+    "updated": "2020-09-18T18:48:39Z",
     "updatedBy": "admin",
     "createdBy": "admin",
-    "version": 72
+    "version": 73
   },
   "dashboard": {
     "annotations": {
@@ -59,7 +59,7 @@
         "height": 139,
         "panels": [
           {
-            "base_url": "http://imars-physalis.marine.usf.edu:8080/erddap",
+            "base_url": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap",
             "bg_color": "0xffccccff",
             "color_bar_str": "|||||",
             "colorbar_display": "individual",
@@ -87,34 +87,34 @@
             "url": "http://imars-physalis.marine.usf.edu:8080/erddap",
             "urls": [
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2018-05-13T15:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2018-05-13T15:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "13th May 2018"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2018-09-18T18:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2018-09-18T18:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "18th Sep 2018"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2018-09-12T11:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2018-09-12T11:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Sep 2018"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2019-01-18T14:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2019-01-18T14:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "18th Jan 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2019-01-12T07:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2019-01-12T07:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Jan 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2019-05-20T10:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2019-05-20T10:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "20th May 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2019-05-14T03:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2019-05-14T03:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "14th May 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2019-09-19T06:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2019-09-19T06:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th Sep 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2019-09-12T23:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2019-09-12T23:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Sep 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2020-01-19T02:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2020-01-19T02:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th Jan 2020"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2020-01-12T19:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2020-01-12T19:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Jan 2020"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.png?sst4_anom[(2020-05-19T22:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/SST4_9c29_08ac_eccb.largePng?sst4_anom[(2020-05-19T22:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Csst4_anom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th May 2020"
               }
             ],
             "variable_id": "sst4_anom"
@@ -132,7 +132,7 @@
         "height": 93,
         "panels": [
           {
-            "base_url": "http://imars-physalis.marine.usf.edu:8080/erddap",
+            "base_url": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap",
             "bg_color": "0xffccccff",
             "color_bar_str": "Rainbow|||-1.0|1.0|",
             "colorbar_display": "individual",
@@ -166,34 +166,34 @@
             "url": "http://imars-physalis.marine.usf.edu:8080/erddap",
             "urls": [
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2018-05-13T15:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2018-05-13T15:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "13th May 2018"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2018-09-18T18:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2018-09-18T18:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "18th Sep 2018"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2018-09-12T11:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2018-09-12T11:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Sep 2018"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2019-01-18T14:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2019-01-18T14:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "18th Jan 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2019-01-12T07:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2019-01-12T07:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Jan 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2019-05-20T10:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2019-05-20T10:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "20th May 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2019-05-14T03:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2019-05-14T03:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "14th May 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2019-09-19T06:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2019-09-19T06:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th Sep 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2019-09-12T23:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2019-09-12T23:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Sep 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2020-01-19T02:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2020-01-19T02:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th Jan 2020"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2020-01-12T19:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2020-01-12T19:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Jan 2020"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?chlor_a_anom[(2020-05-19T22:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?chlor_a_anom[(2020-05-19T22:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7Cchlor_a_anom&.colorBar=Rainbow%7C%7C%7C-1.0%7C1.0%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th May 2020"
               }
             ],
             "variable_id": "chlor_a_anom"
@@ -211,7 +211,7 @@
         "height": 130,
         "panels": [
           {
-            "base_url": "http://imars-physalis.marine.usf.edu:8080/erddap",
+            "base_url": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap",
             "bg_color": "0xffccccff",
             "color_bar_str": "Rainbow|||-0.2|0.2|",
             "colorbar_display": "individual",
@@ -239,34 +239,34 @@
             "url": "http://imars-physalis.marine.usf.edu:8080/erddap",
             "urls": [
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2018-05-13T15:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2018-05-13T15:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "13th May 2018"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2018-09-18T18:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2018-09-18T18:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "18th Sep 2018"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2018-09-12T11:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2018-09-12T11:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Sep 2018"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2019-01-18T14:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2019-01-18T14:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "18th Jan 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2019-01-12T07:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2019-01-12T07:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Jan 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2019-05-20T10:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2019-05-20T10:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "20th May 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2019-05-14T03:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2019-05-14T03:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "14th May 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2019-09-19T06:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2019-09-19T06:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th Sep 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2019-09-12T23:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2019-09-12T23:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Sep 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2020-01-19T02:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2020-01-19T02:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th Jan 2020"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2020-01-12T19:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2020-01-12T19:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Jan 2020"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?ABI_anom[(2020-05-19T22:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?ABI_anom[(2020-05-19T22:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CABI_anom&.colorBar=Rainbow%7C%7C%7C-0.2%7C0.2%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th May 2020"
               }
             ],
             "variable_id": "ABI_anom"
@@ -284,7 +284,7 @@
         "height": 26,
         "panels": [
           {
-            "base_url": "http://imars-physalis.marine.usf.edu:8080/erddap",
+            "base_url": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap",
             "bg_color": "0xffccccff",
             "color_bar_str": "Rainbow|||-0.005|0.005|",
             "colorbar_display": "individual",
@@ -312,34 +312,34 @@
             "url": "http://imars-physalis.marine.usf.edu:8080/erddap",
             "urls": [
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2018-05-13T15:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2018-05-13T15:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "13th May 2018"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2018-09-18T18:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2018-09-18T18:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "18th Sep 2018"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2018-09-12T11:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2018-09-12T11:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Sep 2018"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2019-01-18T14:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2019-01-18T14:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "18th Jan 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2019-01-12T07:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2019-01-12T07:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Jan 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2019-05-20T10:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2019-05-20T10:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "20th May 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2019-05-14T03:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2019-05-14T03:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "14th May 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2019-09-19T06:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2019-09-19T06:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th Sep 2019"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2019-09-12T23:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2019-09-12T23:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Sep 2019"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2020-01-19T02:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2020-01-19T02:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th Jan 2020"
               },
               {
-                "display": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2020-01-12T19:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=144000%7C",
-                "link": "http://imars-physalis.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2020-01-12T19:20:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
-                "request_time": "12th Jan 2020"
+                "display": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.png?Rrs_667_anom[(2020-05-19T22:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=14400%7C",
+                "link": "http://imars-dockerhost-dune.marine.usf.edu:8080/erddap/griddap/OC_e122_8547_dab0.largePng?Rrs_667_anom[(2020-05-19T22:48:00Z)][(31):(24.01)][(-98):(-88.01)]&.draw=surface&.vars=longitude%7Clatitude%7CRrs_667_anom&.colorBar=Rainbow%7C%7C%7C-0.005%7C0.005%7C&.bgColor=0xffccccff&.trim=1&.legend=Bottom&.size=%7C",
+                "request_time": "19th May 2020"
               }
             ],
             "variable_id": "Rrs_667_anom"
@@ -1591,6 +1591,6 @@
     },
     "timezone": "",
     "title": "FGB NMS Early-Alert Dashboard",
-    "version": 72
+    "version": 73
   }
 }
